@@ -1,0 +1,228 @@
+
+DATA CENTER 
+	->	A data center is a facility of one or more buildings that house a centralized computing infrastructure , typically servers, storage and networking equipment
+	-> In this world of apps big data and digital everthing you cant stay on top of your industry without cutting edge computing infrastructure
+	-> If you want to keep things in house the answer is the data center
+	-> Its primary yolw is to support all the crucila business applications and workloads that all organizations use to run their business. 
+
+ROLE OF A DATA CENTERE 
+A data center is designed to handle high volumes of data and traffic with minimum latency which makes it particularly useful for the following use cases: 
+	-> PRIVATE CLOUD : Hosting in house business productivity applications such as CRM , ERP etc 
+	-> PROCESSING BIG DATA , powering machine learning and artifical intelligence 
+	-> High volume eCommerce transactions.
+	-> Powering online gaming platforms and communities.
+	-> Powering online gaming platforms and communities.
+	-> Data storage, backup, recovery, and management.
+
+TYPES OF DATA CENTERS :
+	
+	-> A colocation center - also kown as carrier hotel - is a type of data center where you can rent eqipment , space and bandwidth from the data centers owner\
+	-> for Ex instead of renting a virtual mahine from public cloud provider you can just straight up rent a certain amount of their hardware from specified data centers
+	
+	-> ENTERPRISE: An enterpise data center is a fully company owned data center used to prcess internal data and host mission critical applications
+	
+	-> CLOUD : By using third party cloud services you can set up a vurtual data center inthe cloud , This is a similar concept to colocation but may take advantage of specific services rather than just rentiong the hardware and configuring it yourself
+	
+	-> EDGE DATA CENTER : An edge data center is a smaller data center that is as close to the end user as possible 
+	-> Instead of having one massive data center you instead have multiple smaller ones to minimize latency and lag 
+	-> when IOT devies and low latency data demands are high prganizations ate deploying edge computing facilities
+	
+	-> MICRO DATA CENTERS : A micro data center is essentially an edge data center pushed to the extreme 
+	-> it can be as small as a office room , just handling the data processed in a specific region 
+	
+	
+	-> Large enterprise data centers are still most popular but experts foresee continued frowth incolocation and micro data 
+
+DATA CENTER TIER RATING BREAKDOWN: Tier 1, 2, 3, 4:
+
+-> Companies also rate data centers by tier to highlight their expected uptime and reliability.
+-> Let’s break it down:
+
+Tier 1:
+	-> A Tier 1 data center has a single path for power and cooling and few, if any, redundant and backup components.
+	-> It has an expected uptime of 99.671% (28.8 hours of downtime annually).
+Tier 2: 
+	-> A Tier 2 data center has a single path for power and cooling and some redundant and backup components.
+	-> It has an expected uptime of 99.741% (22 hours of downtime annually).
+Tier 3:
+	-> A Tier 3 data center has multiple paths for power and cooling and systems in place to update and maintain it without taking it offline.
+	-> It has an expected uptime of 99.982% (1.6 hours of downtime annually).
+Tier 4:
+	-> A Tier 4 data center is built to be completely fault-tolerant and has redundancy for every component.
+	-> It has an expected uptime of 99.995% (26.3 minutes of downtime annually)
+	
+
+CHOOSING YOUR DATA CENTER LOCATION IS CRUCIAL 
+-> Choosing the location of your data center is one of the most important decisions you’ll make.
+-> Here are just some of the things you must consider:
+
+	-> PROXIMITY TO MAJOR MARKETS AND COUSTOMERS :
+		-> Latency and reliable connections play a major factor in running an efficient facility that meets customer demand.
+	-> LABOR COSTS AND AVAILABILITY :
+		-> While labor costs may be good in a particular region, is there enough talent (across disciplines) needed to run and maintain your data center?
+	-> ENVIRONMENTAL CONDITIONS : 
+		-> Temperature and humidity variances wreak havoc on environmental systems and forecasting. 
+		-> Earthquakes, hurricanes, blizzards, and tornadoes are unpredictable and can shut down a facility indefinitely. Keep this in mind.
+	-> AIRPORT AND HIGHWAY ACCESSIBILITY AND QUALITY :
+		-> You need large equipment and service equipment to build and maintain the data center.
+		-> It must also be readily accessible for delivery, services, and employees.
+	-> AVAILABILITY AND COST OF REAL ESTATE OPTIONS :
+		-> Build versus buy requires considering building costs and quality of construction, versus incentives from landlords and local governments
+	-> AMOUNT OF LOCAL AND STATE ECONOMIC DEVELOPMENT INCENTIVES :
+		-> Beyond construction considerations, local jurisdiction may provide development incentives in rural or redevelopment areas, and less inviting in densely populated or over-resourced areas.
+		-> On the counter side of this are the taxes and regulatory requirements that can be costly and restrictive.
+	-> AVAILABILITY OF TELECOMMUNICATIONS INFRASTRUCTURE :
+		->  Make sure local providers can meet your future bandwidth demands and that there are not only redundant systems from your provider, but that you have multiple providers available
+	-> COST OF UTILITIES :
+		-> Costs vary globally and in some geographies you may not have an option of where you place your data center and considering alternative power sources is prudent and in some countries, required.
+
+NOTE:
+
+	-> SCALABILITY : 
+		-> The ability to increase the capacity of the resources is known as scalability 
+	-> ELASTICITY:
+		-> the ability to increase or decrease the capacity of a resources is known as elasticity
+	-> RELIABILITY :
+		-> the ability of the resources to over come a failover situation and continue its operations 
+	-> AVAILABILITY :
+		-> Copying and moving the resources to new locations for lower latency accesesability for users around that location 
+	-> REDUNDANCY :
+		-> The ability of the resources to with stand any adverse factors and still continue its operations
+		
+
+Data Center Physical Security:
+How to Keep Your Data Safe
+There are three important concepts to keep in mind when designing a policy to keep your data safe and available at all times — data security, service continuation, and personnel and asset safety.
+
+Data Security
+Data security systems include physical and telemetric systems, rigid security policy adherence, and highly available redundancy make up the data protection foundation. These protect against physical intrusion, cyber breaches, human, and environmental events.
+
+Service Continuation
+Set up the proper architecture of power and networking systems, including redundancy, disruption simulations, and automated workflows. That way, you can deliver on SLAs and protect yourself against unforeseen incidents.
+
+Personnel and asset safety and preservation
+Use proven data center design practices to monitor weight and power distribution, cable management, and alarm systems to alert before reaching safety thresholds.
+
+Improve Your Data Center Security
+Asset integrity monitoring is a cornerstone practice for any major computing infrastructure. It continuously monitors your system for anomalies, and alerts you immediately for power and environmental incidents.
+
+Data center teams can use them to:
+
+	-> Reduce, predict, and plan for power and thermal anomalies.
+	-> Identify at-risk firmware and software.
+	-> Identify human errors outside security and CMP policies.
+	-> Detect unauthorized hardware or software on the network.
+
+Operations and security teams benefit from increased visibility and a simplified audit process with an accurate asset data set.
+
+	-> Automated discovery of assets and attributes.
+	-> Traceable lifecycle management and workflows.
+	-> Logged user access, date, and time.
+	-> Identification of unknown and non-compliance hardware and software.
+	-> Critical incident and custom report queries.
+
+
+How does Data Center Infrastructure Management (DCIM) Software Improve the Data Center?
+
+-> DCIM bridges the gap between facilities and IT, coordinating planning and managing through automation and transparent communication, leveraging a “single source of truth”.
+-> What does that actually mean? All the data and controls you need to manage your data center are available in one place. (And most of the time, it controls itself perfectly without any of your input.)
+
+	-> Asset Management
+		-> From the receiving dock to decommissioning, Nlyte DCIM maximizes the production value of your assets over time. 
+		-> Capturing change at its source, Nlyte DCIM facilitates timely onboarding of equipment at the time of receiving, and streamlines the decommissioning of older equipment.
+
+	-> Workflow Automation
+		-> Optimize your resources and personnel with measurable, repeatable, intelligent processes making individuals more efficient.
+		-> Support cross-team assignment for multi-team tasks. Extend the adoption of ITIL and COBIT into the data center without any additional development or services.
+
+	-> Bi-lateral Systems Communication
+		-> Nlyte becomes your single source of truth for all assets, sharing information between Facilities, IT, and business systems.
+
+	-> Infrastructure and Workload Optimization
+		-> Designed to support your operation efficiency goals and reduce the number of ad-hoc processes at play in your data center.
+		-> Unlock unused and under-utilized workload, space, and energy capacity to maximize your ROI.
+
+	-> Space and Efficiency Planning
+		-> Forecast and predict the future state of your data center’s physical capacity based on consumption management.
+		-> “What if” models forecast the exact capacity impact of data center projects on space, power, cooling and networks.
+
+	-> Risk, Audit, Compliance, and Reporting
+		-> Power failure simulations and automated workflow reduce the risk of the unknown and human error.
+		-> Audit and reporting tools improve visibility and help achieve compliance requirements.
+
+Data Center Storage
+	-> Data center storage, a part of data center architecture, is a collective term for the devices, software technologies and processes that design, manage and monitor data storage within a data center.
+	-> Apart from the devices and software technologies, data center storage also includes the policies and procedures used to govern the process of data storage and retrieval,
+	-> for example, data storage security, data collection, data availability and so on.
+	-> Besides data center storage must abide by the government laws and regulations related to data storage and security under some circumstances.
+
+	-> With advancement of information technologies companies are provided with a variety of options on data center storage such as solid state drives , sloud storage , software defined storage etc
+	-> However many data centers still rely on three traditional ways of sata center storage :
+		-> direct  attached storage
+		-> network attached storage 
+		-> storage area network 
+	-> THe three types of data center storage and their pros and cons will be discussed throughly in the following slides
+		-> DAS - direct  attached storage
+		-> NAS - network attached storage 
+		-> SAN - storage area network
+		
+	1.Direct Attached Storage (DAS)
+	
+	IMAGE = https://resource.fs.com/mall/generalImg/VGYqbJjNXo9iiqxuK2nccBU8nGc.jpeg
+	-> Direct attached storage (DAS) typically refers to hard disk drives (HDDs) or solid-state drives (SSDs) and is the most common type of data center storage. Just as its name shows, DAS is attached directly to a host server, instead of connecting through a network, like Ethernet.
+	-> Besides, DAS usually connects to a computer through Small Computer System Interface (SCSI). Whether connected to a computer internally or externally, DAS is controlled by the host computer.
+	-> Advantages of DAS:
+		-> Cost-saving: DAS is much cheaper than other storage technologies, such as NAS and SAN. And the price per GB for these types of storage devices is very low, which continues to trend downward. Because of this, it is more popular in small-to-medium-sized businesses.
+		-> Better performance: Compared with other networked storage solutions, DAS cannot be affected by network bottlenecks, such as network congestion. Therefore, the data hosted on DAS can be accessed without hindrance.
+	-> Disadvantages of DAS:
+		-> Limited scalability: 
+			-> Because the overall configuration is too simple, DAS is easily influenced by the server.
+			-> A server can only support a few expansion slots or external ports.
+			-> Besides, if the server fails, the data cannot be accessed.
+		-> Not shareable enough:
+			-> Since data on DAS cannot be connected through the internet, data sharing can be a big problem.
+			-> If the users want to share data with someone, they have to do this through each other's computer or find another way out.
+		
+	2.Network Attached Storage (NAS)
+	
+	IMAGE = https://resource.fs.com/mall/generalImg/ZOxEbo0sto5OKHxaQtccRml0nAc.jpeg
+	-> Network Attached Storage (NAS) is a file-level data center storage device that supports multiple users to retrieve data from centralized disk capacity over a TCP/IP network.
+	-> It usually has its node on the local area network (LAN), without the intervention of the application server, allowing users to access data on the network.
+	-> As a dedicated data storage server, NAS includes storage devices (such as disk arrays, CD/DVD drivers) and embedded system software, supporting cross-platform file sharing.
+	-> Besides, it also supports a variety of protocols, including Network File System (NFS), Common Internet File System (CIFS), File Transfer Protocol (FTP), Hyper Text Transfer Protocol (HTTP), etc.
+	-> Advantages of NAS:
+		-> High-efficient file sharing:
+			-> NAS enables users and applications to access and edit the files on the same hard drive easily through the network, which improves the efficiency of work a lot.
+		-> Easy deployment and operation:
+			-> NAS can provide reliable file-level data consolidation since file locking is handled by the device itself.
+			-> It can also distribute NAS hosts and other devices across an enterprise's network environment.
+	-> Disadvantages of NAS:
+		-> Poor performance:
+			-> Shared network bandwidth is a major problem limiting NAS performance.
+			-> The storage data is transmitted through the network, so it is vulnerable to other traffics on the network.
+			-> When there is other large data traffic, the system performance will be affected seriously.
+		-> Lack of scalability:
+			-> The scalability of NAS is limited by the size of the device.
+			-> Since NAS devices usually have unique network identifiers, the expansion of storage space is limited.
+			-> It can only provide file storage space and cannot fully meet the requirements of database applications.
+	
+	3.Storage Area Network (SAN)
+	
+	IMAGE = https://resource.fs.com/mall/generalImg/NZagbSaJboQmkPxnnp4cFFslnZc.jpeg
+	-> Storage Area Network (SAN) is a dedicated and high-speed network established for storage that is independent of the TCP/IP network. It connects servers to their logical disk units (LUNs) and provides block-level network access to data center storage.
+	-> SAN typically adopts a high-end RAID array, which makes the performance of SAN stand out among other data center storage solutions. At present, the common SAN includes FC-SAN and IP-SAN.FC-SAN forwards SCSI protocol through Fibre Channel protocol, while IP-SAN forwards SCSI protocol through TCP protocol.
+	-> Advantages of SAN:
+		-> High scalability:
+			-> SAN can accommodate more than 1000 devices, therefore it is very convenient for companies to increase the devices according to their needs.
+			-> Besides, it includes centralized management and disaster recovery, improving storage resource utilization.
+		-> High security:
+			-> SAN includes a variety of security measures to ensure data center security.
+			-> For example, there are restrictions on the users who can have access to data center storage, which avoids data theft to some extent.
+	-> Disadvantages of SAN:
+		-> High cost:
+			-> Not only are the components of SAN pricey, such as the high-performance hardware but there are also significant costs associated with managing and maintaining a SAN.
+			-> In addition, if companies choose to use SAN, they need to pay high training expenses for IT staff.
+		-> Complex and difficult installation:
+			-> SAN is complex in nature because of the sophisticated storage devices.
+			-> Therefore, specialized skills and knowledge are required to maintain and deploy the SAN.
+			

@@ -1,0 +1,199 @@
+
+
+DIFFERENT PARTS OF IP ADDRESS
+	An ip address is made up of different parts each serving a specific purpose in identifying a device on a network 
+	-> In an IPv4 address there are four parts called octets which are separated by dots . Here's what each part represents
+		NETWORK PORTION :
+			-> The first few sections of an ip address identify the network that the device belongs to .
+			-> This part of the I{ address is common among all devices on the same network allowing them to communicate with each other and share resources
+		HOST PORTION 
+			-> The remaining sections of the Ip address specify the individual device or host within that network 
+			-> This part makes each device unique within the network allowing the network allowing the router to distinguish between different devices
+	-> The 32 bit IP address is divides into sub classe . THese are given below
+		-> CLASS A : The network ID is 8 bits long and the host ID is 24 bits long
+		-> CLASS B : The network ID is 16 bits long and the host ID is 16 bits long
+		-> CLASS C : The network ID is 24 bits long and the host ID is 8 bits long
+HOW DOES SUBNETTING WORKS ?
+	The working of subnets starts in such a way that firstly it divides the subnets into smaller subnets 
+	-> For communicationg between subnets , routers are used 
+	-> Each sucnet allows its linked devices to communicate with each other 
+	-> Subnetting for a network should be done in such a way that it does not affect the network buts
+	
+	-> In class C the first 3 octets are netowrk bits so it remains as it is.
+	
+	
+	-> FOR SUBNET 1 : The first bit which is chosen from the host ID is part is zero the range will be from (193.1.2.00000000 till you get all 1's in the host ID part i.e 193.1.2.01111111) except the first bit which is chosen zero for subnet id part
+	-> Thus the range of the subnet 1 is 193.1.2.0 to 192.1.2.127
+	-> Subnet ID of subnet 1 is : 193.1.2.0
+	-> The direct broadcast ID of the subnet 1 is : 193.1.2.127
+	-> The total number of hosts possible is : 126 (OUT of 128 , 2 id's are used for subnet id and direct broadcast id )
+	-> The subnet mask of subnet 1 is: 255.255.255.128
+	
+	-> FOR SUBNET 2 : The first bit choosen from the host id part is one and the range will be from (193.1.2.10000000 till you get all 1's in the host ID part i.e 193.1.2.11111111)
+	-> Thus the range of subnet 2 is 193.1.2.128 to 193.1.2.255
+	-> Subnet id of the subnet 2 is 193.1.2.128
+	the direct broadcast id of the subnet 2 is : 193.1.2.255
+	-> the total number of hosts possible is : 126 
+	-> the subnet mask of subnet 2 is : 255.255.255.128
+	-> the best way to find out the subnet mask of a subnet is to set the fixed but of the host id to 1 and the rest to 0
+	-> FInally after the subnetting the total number of usable hosts is reduces from 254 to 252
+	
+	NOTE:
+	
+	-> To divide a network into four parts you need to choose two bits from the host id part for each subnet i.e 00,01,10,11
+	-> To divide a netowrk into eight parts you need to choose the three bits from the host id part for each subnet i.e 000,001, 010, 011, 100, 101,110 111 and so on 
+	-> we can say that if the total number of subnets in network incerases the total nunber of udable hosts decreases
+	-> The network can be divided into two parts
+		-> To divide a network into two parts , you need to choose one bit for each subnet from the host ID part
+	-> In below diagram there are two subnets
+	
+	NOTE : It is a class C IP so , there are 24 bits in the network id part ad 8 bits in the host id part
+	
+	IMAGE = https://media.geeksforgeeks.org/wp-content/uploads/subnetting.111111.jpg
+	
+CLASSLFULL VS CLASSLESS ADDRESSING
+
+					Parameter									Classful Addressing																								Classless Addressing
+					
+					Basics					In Classful addressing IP addresses are allocated according to the classes- A to E.					Classless addressing came to replace the classful addressing and to handle the issue of allocation of IP Address.
+					
+			Network ID and Host ID			The changes in the Network ID and Host ID depend on the class.										There is no such restriction of class in classless addressing.
+					
+					VLSM					It does not support the Variable Length Subnet Mask (VLSM).											It supports the Variable Length Subnet Mask (VLSM).
+					
+				Bandwidth					Classful addressing requires more bandwidth. As a result, it becomes slower 						It requires less bandwidth. Thus, fast and less expensive as compared to classful addressing.
+											and more expensive as compared to classless addressing.
+				
+					CIDR					It does not support Classless Inter-Domain Routing (CIDR).											It supports Classless Inter-Domain Routing (CIDR).
+					
+					Updates					Regular or periodic updates																			Triggered Updates
+					
+	Troubleshooting and Problem detection	Troubleshooting and problem detection are easy than classless addressing because					It is not as easy compared to classful addressing. 
+											of the division of network, host and subnet parts in the address.
+				
+			Division of Address				Network,Host,Subnet																					Host, Subnet
+
+INTRODUCTION TO CLASSFUL ADDRESSING
+	-> An IP addreses is an address that has information about how to reach a specific host especially outside the LAN , An IP address is a 32 bit unique address having a address a space of 232
+	CLASSFUL IP ADDRESSING : iT Is a way of organizing and managing IP addresses which are used o identify devices on anetwork. Think of IP addresses like steet addresses for houses each device on an etwork needs its unique address to communicate with other devices . 
+	
+WHAT IS IPv4 ADDRESS:
+	-> An ipv4 address is unique number assigned to every device that connects to the internet or computer network 
+	-> Its like home address for your computer smartphone or any other device allowing it to communicate with oter devices
+		-> FORMAT: An IPv4 address is written as four numbers separeated by periods like this : 192.162.1.1 
+		-> Each number ranges from 0 to 255
+		-> the IPv4  address is divided into two parts : NETWORK ID AND HOST ID 
+		-> PURPOSE: the main purpose of an IPv4 address is to identify devices on a network and ensure that data sent from one device reaches the correct destination 
+		-> EXAMPLE: when you type a website address into your browser, your device uses the IPv4 address to find and connect to the server where the website is hosted
+		->HOST ID: Think of an IPv4 address as a phone number for your device just as you dial a specific number to reach a particular person , devices use IPv4 addresses to connect and share information
+		-> there are two notations in which the IP address is written , dotted decimal and hexadecimal notation 
+			DOTTED DECIMAL NOTATION :
+				SOME points to be noted about dotted decimal notation :
+					-> The value of any segment (byte) is between 0 to 255 
+					-> No zeros are preceding the value in any segement (054 is wrong , 54 is correct)
+					
+		IMAGE = https://media.geeksforgeeks.org/wp-content/cdn-uploads/IP_addressing_1.jpg
+		
+		IMAGE = https://media.geeksforgeeks.org/wp-content/cdn-uploads/IP_addressing_1.jpg
+					
+
+Need For Classful Addressing
+	-> Initially in 1980’s IP address was divided into two fixed part i.e., NID(Network ID) = 8bit, and HID(Host ID) = 24bit.
+	-> So there are 28 that is 256 total network are created and 224 that is 16M Host per network.
+	-> There are one 256 Networks and even a small organization must buy 16M computer(Host) to purchase one network. That’s why we need classfull addressing.
+
+CLASSFUL ADDRESSING
+	-> The 32-bit IP address is divided into five sub-classes. These are given below:
+
+		-> Class A
+		-> Class B
+		-> Class C
+		-> Class D
+		-> Class E
+	-> Each of these classes has a valid range of IP addresses. Classes D and E are reserved for multicast and experimental purposes respectively.
+	-> The order of bits in the first octet determines the classes of the IP address. 
+	-> The class of IP address is used to determine the bits used for network ID and host ID and the number of total networks and hosts possible in that particular class.
+	-> Each ISP or network administrator assigns an IP address to each device that is connected to its network.
+	
+Range of Special IP Addresses
+169.254.0.0 – 169.254.0.16 : Link-local addresses
+127.0.0.0 – 127.255.255.255 : Loop-back addresses
+0.0.0.0 – 0.0.0.8: used to communicate within the current network.
+
+Rules for Assigning Host ID
+	-> Host IDs are used to identify a host within a network. The host ID is assigned based on the following rules:
+	-> Within any network, the host ID must be unique to that network.
+	-> A host ID in which all bits are set to 0 cannot be assigned because this host ID is used to represent the network ID of the IP address.
+	-> Host ID in which all bits are set to 1 cannot be assigned because this host ID is reserved as a broadcast address to send packets to all the hosts present on that particular network.
+
+Rules for Assigning Network ID
+	-> Hosts that are located on the same physical network are identified by the network ID, as all host on the same physical network is assigned the same network ID. The network ID is assigned based on the following rules:
+	-> The network ID cannot start with 127 because 127 belongs to the class A address and is reserved for internal loopback functions.
+	-> All bits of network ID set to 1 are reserved for use as an IP broadcast address and therefore, cannot be used.
+	-> All bits of network ID set to 0 are used to denote a specific host on the local network and are not routed and therefore, aren’t used.
+	
+CIDR NOTATION - CLASSLESS INTER DOMAIN ROUTING
+
+	-> THE NOTATIONS ARE FROM /16 TO /28
+
+	VPC 1 - 10.0.0.0/22 - 1024 IP Addresses
+	
+	TOTAL NUMBER OF BITS IN IPv4 - 32
+	
+	BITS IN CIDR IP ADDRESS - 22
+	
+	32-22 = 10 - 2^10 = 1024 IP Addresses( SO NOW 1024 IP ADDRESSES ARE ASSIGNED TO THE VPC 1 )
+	
+	-> FOR /23 -> 32 - 23 = 9 = 2^9 - 512 IP ADDRESSES
+	-> FOR /24 -> 32 -24 = 8 = 2^8 - 256 IP ADDRESSES
+	-> FOR /25 -> 32 - 25 = 7 = 2^7 - 128 IP Addresses
+	-> FOR /26 -> 32 - 26 = 6 = 2^6 - 64 IP Addresses
+	-> FOR /27 -> 32 - 27 = 5 = 2^5 - 32 IP Addresses
+	-> FOR /28 -> 32 - 28 = 4 = 2^4 - 16 IP Addresses
+	
+	-> FOR /22 -> 32 - 22 = 10 = 2^10 - 1024 IP ADDRESSES 
+	-> FOR /21 -> 32 - 21 = 11 = 2^11 - 2048 IP ADDRESSES 
+	-> FOR /20 -> 32 - 20 = 12 = 2^12 - 4096 IP Addresses
+	-> FOR /19 -> 32 - 19 = 13 = 2^13 - 8192 IP Addresses
+	-> FOR /18 -> 32 - 18 = 14 = 2^14 - 16384 IP Addresses
+	-> F0R /17 -> 32 - 17 = 15 = 2^15 - 32768 IP Addresses
+	-> FOR /16 -> 32 - 16 = 16 = 2^16 - 65536 IP ADDRESSES  
+	
+	
+	EXAMPLE 1 : VPC1 - 10.0.0.0/24 - 256 IP Addresses
+	
+			TOTAL NUMBER OF BITS IN IPV4 - 32 
+			BITS IN CIDR IP ADDRESS - 24 
+			
+			32 - 24 = 8 , 2^8 = 256 IP Addresses
+			
+			10.0.0.1, 10.0.0.2, 10.0.0.3, 10.0.0.4, ............., 10.0.0.255
+			
+	EXAMPLE 2 : VPC2 - 10.0.0.0/23 - 512 IP Addresses
+				TOTAL NUMBER OF BITS IN IPv4 - 32
+				BITS IN CIDR IP ADDRESSES - 24 
+				
+				32 - 23 = 9 , 2^9 = 512 ADDRESSES 
+				
+				10.0.0.1, 10.0.0.2, 10.0.0.3,.........,10.0.0.255, 10.0.1.0, .................., 10.0.1.255 
+													(10.0.0.1111111
+																+ 1
+													_______________
+													   10.0.1.0)
+													   
+	EXAMPLE 3 : VPC3 - 10.0.0.0/22
+				TOTAL NUMBER OF BITS IN IPv4 - 32
+	
+				BITS IN CIDR IP ADDRESS - 22
+	
+				32-22 = 10 - 2^10 = 1024 IP Addresses( SO NOW 1024 IP ADDRESSES ARE ASSIGNED TO THE VPC 3 )
+				
+				
+				10.0.0.1, 10.0.0.2, 10.0.0.3,.........,10.0.0.255, 10.0.1.0, .................., 10.0.1.255, 10.0.2.0, 10.0.2.1, ................., 10.0.2.255, 10.0.3.0, 10.0.3.1,.........10.0.3.255
+													(10.0.0.1111111								(10.0.00000001.11111111
+																+ 1													+ 1
+													_______________								_______________________
+													   10.0.1.0)								10.0.00000010.00000000
+	
+	
+				

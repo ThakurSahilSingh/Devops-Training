@@ -1,0 +1,314 @@
+	1.SITE TO SITE VPN:
+		-> A site to site vpn establishes a link between two or more distinct networks 
+		-> Such as company main network and its satellites office networks-
+		-> Many organizations adopt site to site vpn to utilize internet pathways for confidential data rather than private MPLS channels.
+		-> Organizations with multiple branches spread across diverse regions often use site-to-site VPNs. 
+		-> Through this setup, businesses can safely integrate their central network with distant offices, enabling seamless communication and resource sharing as though they were one unified network. 
+		-> A site-to-site solution can be deployed as an extranet-based VPN when a company connects its network to the networks of its partners, suppliers, or customers.
+
+	2.REMOTE ACCESS VPN:
+		-> Remote access VPNs allow off-site users to securely connect to and utilize applications and information in the company's main data center, encrypting all user data transmitted and received.
+		-> The remote access VPN ensures security regardless of the user's public location by forming a virtually private connection using a tunnel between the enterprise's network and a distant user.
+		-> This is achieved by encrypting the data, rendering it indecipherable to potential interceptors. 
+		-> Users can interact with their company's network as if they were on-site, ensuring safe data transfer without the concern of external interference or data breaches.
+	
+	3.CLOUD REMOTE ACCESS VPN
+		-> Cloud VPN, sometimes referred to as hosted VPN or VPN as a service (VPNaaS), is a VPN approach tailored for cloud environments. 
+		-> This VPN allows users to securely access a business's resources, data, and applications in the cloud through a web interface or a dedicated app on desktop or mobile.
+		-> Unlike conventional VPNs that necessitate specific infrastructure at the user's location, cloud VPNs integrate seamlessly into a company's cloud distribution framework. ->
+		-> One significant benefit of cloud VPNs is rapid worldwide configuration and deployment.
+		-> Using a Cloud VPN enhances security compared to traditional VPNs and contributes to a more adaptable, nimble, and scalable cloud setup for businesses.
+	
+	4.SSL VPN
+		-> An SSL VPN, or Secure Sockets Layer virtual private network, allows remote users to connect to private networks in a secure manner. 
+		-> It employs the SSL security protocol, or its successor, the Transport Layer Security (TLS) security protocol, to ensure the encrypted transmission of data between the user's device and the VPN gateway. 
+		-> This encryption safeguards the integrity and confidentiality of data, ensuring that unauthorized entities cannot intercept or alter it.
+		-> Unlike some VPN solutions, an SSL VPN does not require specialized VPN client software on users' devices. Instead, it uses standard web browsers, making it more accessible and reducing the deployment complexity. 
+		-> All communications between the user's web browser and the VPN device are encrypted, making it safe for data transfer across potentially insecure networks.
+		
+		-> There are two types of SSL VPNs:
+
+			1.SSL PORTAL VPN
+			-> In this model, users access a single webpage, or portal, which provides links to other private network resources. 
+			-> By visiting a specific website and entering credentials, users can initiate a secure SSL connection. 
+			-> This portal then grants access to designated applications or network services, as predefined by the organization.
+
+			2.SSL TUNNEL VPN
+			-> This variant is more comprehensive, enabling users to securely access multiple network services, not just those that are web-based. 
+			-> It establishes an encrypted tunnel under SSL, allowing for the secure access of various resources. 
+			-> To function optimally, SSL Tunnel VPN might require browsers equipped with additional applications, such as JavaScript or Flash.
+			
+	5.DOUBLE VPN
+		-> A double VPN is more of a configuration versus a type of VPN technology. 
+		-> This setup involves channeling user traffic through two sequential VPN servers, providing two layers of encryption. 
+		-> In standard VPN use, data flows from the user's device to a single VPN server and then to the destination online. 
+		-> Using a double VPN configuration, the user's data is first encrypted and sent to an initial VPN server. 
+		-> Then it's encrypted again and directed to a second VPN server before reaching its final online destination.
+		-> While the double VPN method heightens security by adding an extra layer of encryption, it can also lead to slower connection speeds. 
+		-> This slowdown is a result of the data passing through two separate servers and undergoing dual encryption processes. 
+		-> While beneficial for those seeking augmented security, it may not be ideal for all due to potential performance impacts.
+		
+	NOTE:
+		-> VPN refers to the overall secure connections system 
+		-> A VPN tunnel specifically denotes the encrypted data passage within that system
+		-> VPN protocol is the set of instructions that dictate how the VPN shoud secure the data being transmitted
+		-> Choosing a VPN depends on :
+			-> security features 
+			-> scalability
+			-> ease of use
+			-> support
+			-> cost
+			
+CHECK SUM:
+	-> Checksum is the error detection method used by upper-layer protocols and is considered to be more reliable than Longitudinal Redundancy Check (LRC), Vertical Redundancy Check (VRC), and Cyclic Redundancy Check (CRC). 
+	-> This method uses a Checksum Generator on the sender side and a Checksum Checker on the receiver side. 
+	-> It is a unique number generated from data to verify its integrity. When data is created, a checksum is calculated and sent or saved with it. 
+	-> Later, when accessing the data, the checksum is recalculated. If the two checksums match, the data is likely error free. 
+	
+	How Checksum Works?
+		-> On the Sender side, the data is divided into equal subunits of n bit length by the checksum generator. 
+		-> This bit is generally of 16-bit length. These subunits are then added together using one’s complement method. 
+		-> This sum is of n bits. The resultant bit is then complemented. 
+		-> This complemented sum which is called checksum is appended to the end of the original data unit and is then transmitted to the receiver. 
+		-> The Receiver after receiving data + checksum passes it to checksum checker. 
+		-> Checksum checker divides this data unit into various subunits of equal length and adds all these subunits. 
+		-> These subunits also contain checksum as one of the subunits. 
+		-> The resultant bit is then complemented. 
+		-> If the complemented result is zero, it means the data is error-free.
+		-> If the result is non-zero it means the data contains an error and Receiver rejects it.
+		
+		IMAGE = https://media.geeksforgeeks.org/wp-content/uploads/20200909115220/Checksum.png
+		
+	ADVANTAGES:
+		-> Error Detection 
+		-> Simple and fast
+		-> Less Resources
+	DISADVANTAGES:
+		-> Limited detection
+		-> no error correction
+		-> no security
+		
+	Example:
+	
+	Sender side:
+		10101001 (8 bits) - subunit 1
+		00111001 (8 bits) - subunit 2
+		________
+		11100010 (sum)
+		
+		00011101 (checksum - complement of sum)
+		
+	Receiver Side:
+	
+		10101001        subunit 1  
+		00111001        subunit 2     
+		00011101        checksum 
+		________
+		11111111            sum
+		
+		00000000     sum's complement
+		
+		Result is zero, it means no error.
+		
+
+COMPUTER NETWORK COMPONENTS:
+
+	IMAGE = https://www.tutorialspoint.com/data_communication_computer_network/images/computer_network_componenets.png
+	
+	PEERS: 
+		-> Peers are computers that provide as well as receive services from other peers in a workgroup network.
+	TRANSMISSION MEDIA:
+		-> Transmission media are the channels through which data is transferred from one device to another in a network. 
+		-> Transmission media may be guided media like coaxial cable, fibre optic cables etc; or maybe unguided media like microwaves, infra-red waves etc.
+	CONNECTING DEVICES: 
+		-> Connecting devices act as middleware between networks or computers, by binding the network media together. 
+		-> Some of the common connecting devices are: Routers, Bridges, Hubs, Repeaters, Gateways and Switches.
+	
+	SWITCH CHARACTERISTICS:
+		-> A switch operates in the layer 2, i.e. data link layer of the OSI model.
+		-> It is an intelligent network device that can be conceived as a multiport network bridge.
+		-> It uses MAC addresses (addresses of medium access control sublayer) to send data packets to selected destination ports.
+		-> It uses packet switching technique to receive and forward data packets from the source to the destination device.
+		-> It is supports unicast (one-to-one), multicast (one-to-many), and broadcast (one-to-all) communications.
+		-> Transmission mode is full duplex, i.e. communication in the channel occurs in both the directions at the same time. Due to this, collisions do not occur.
+		-> Switches are active devices, equipped with network software and network management capabilities.
+		-> Switches can perform some error checking before forwarding data to the destined port.
+		-> The number of ports is higher – 24/48.
+		
+	TYPES OF SWITCHES:
+		-> Unmanaged switch
+		-> Managed switch
+		-> LAN switch 
+		-> PoE switch
+		
+	REPEATERS:
+		-> Repeaters are network devices operating at physical layer of the OSI model that amplify or regenerate an incoming signal before retransmitting it. 
+		-> They are incorporated in networks to expand its coverage area. They are also known as signal boosters
+		
+		image = https://www.tutorialspoint.com/data_communication_computer_network/images/signal_booster.jpg
+		
+		-> Repeaters amplifies the attenuated signal and then retransmits it. 
+		-> Digital repeaters can even reconstruct signals distorted by transmission loss. 
+		-> So, repeaters are popularly incorporated to connect between two LANs thus forming a large single LAN. This is shown in the following diagram
+		
+		image = https://www.tutorialspoint.com/data_communication_computer_network/images/lans.jpg
+		
+		TYPES OF REPEATERS:
+			-> BASED ON THE TYPES OF SIGNALS:
+				-> Analog Repeaters
+				-> Digital Repeaters
+			-> BASED ON THE TYPES OF NETWORK:
+				-> Wired Repeaters
+				-> Wireless Repeaters
+			-> BASED ON THE DOMAIN OF LANs:
+				-> Local Repeaters
+				-> Remote Repeaters
+				
+		
+		GATEWAYS:	
+			
+			-> Gateways connect two networks and manages all the data that inflows and outflows from that network 
+			
+			IMAGE = https://tutorialspoint.com/data_communication_computer_network/images/gateways.jpg
+			
+			-> Gateway is located at the boundary of a network and manages all data that inflows or outflows from that network.
+			-> It forms a passage between two different networks operating with different transmission protocols.
+			-> A gateway operates as a protocol converter, providing compatibility between the different protocols used in the two different networks.
+			-> The feature that differentiates a gateway from other network devices is that it can operate at any layer of the OSI model.
+			-> It also stores information about the routing paths of the communicating networks.
+			-> When used in enterprise scenario, a gateway node may be supplemented as proxy server or firewall.
+			-> A gateway is generally implemented as a node with multiple NICs (network interface cards) connected to different networks. However, it can also be configured using software.
+			-> It uses packet switching technique to transmit data across the networks.
+			
+			TYPES OF GATEWAYS:
+				-> Based on direction of data flow
+					-> Unidirectional Gateways
+					-> Bidirectional Gateways
+				-> Based on basis of functionalities
+					-> Network Gateway
+					-> Cloud Storage Gateway
+					-> Internet-To-Orbit Gateway
+					-> IoT Gateway
+					-> VoiP Trunk Gateway
+		BRIDGES:
+			-> Bridges are used to connect two subnetworks that use interchangeable protocols. 
+			-> It combines two LANs to form an extended LAN. The main difference between the bridge and repeater is that the bridge has a penetrating efficiency. 
+			-> Bridges are used to divide large busy networks into multiple smaller interconnected networks to improve performance.
+			-> A bridge accepts all the packets and amplifies all of them to the other side. 
+			-> The bridges are intelligent devices that allow the passing of only selective packets from them. 
+			-> A bridge only passes those packets addressed from a node in one network to another node in the other network.
+			
+			TYPES OF BRIDGES :
+				
+				image = https://www.tutorialspoint.com/data_communication_computer_network/images/types_bridges.jpg
+				
+		NETWORK INTERFACE CARD:
+			-> A network interface card (NIC) is a hardware component without which a computer cannot be connected over a network. 
+			-> It is a circuit board installed in a computer that provides a dedicated network connection to the computer. 
+			-> It is also called network interface controller, network adapter, or LAN adapter.
+			
+			TYPES OF NETWORK INTERFACE CARDS:
+			
+				image = https://www.tutorialspoint.com/data_communication_computer_network/images/types_of_nic_cards.jpg
+				1. Internal Network Cards
+					->In internal networks cards, motherboard has a slot for the network card where it can be inserted. 
+					->It requires network cables to provide network access. Internal network cards are of two types. 
+					->The first type uses Peripheral Component Interconnect (PCI) connection, while the second type uses Industry Standard Architecture (ISA).
+					
+					image = https://tutorialspoint.com/data_communication_computer_network/images/internal_network_cards.jpg
+					
+				2. External Network Cards
+					-> In desktops and laptops that do not have an internal NIC, external NICs are used. 
+					-> External network cards are of two types: Wireless and USB based. 
+					-> Wireless network card needs to be inserted into the motherboard, however no network cable is required to connect to the network. 
+					-> They are useful while traveling or accessing a wireless signal.
+					
+					image = https://www.tutorialspoint.com/data_communication_computer_network/images/external_network_cards.jpg
+					
+				PURPOSE OF USING NETWORK INTERFACE CARD:
+					-> NIC allows both wired and wireless communications.
+					-> NIC allows communications between computers connected via local area network (LAN) as well as communications over large-scale network through Internet Protocol (IP).
+					-> NIC is both a physical layer and a data link layer device, i.e. it provides the necessary hardware circuitry so that the physical layer processes and some data link layer processes can run on it.
+				
+				ADVANTAGES OF NETWORK INTERFACE CARDS
+					-> Faster network Speed
+					-> Reliability 
+					-> Security
+					-> Compatibility
+					-> Lower CPU usage
+				
+				DISADVANTAGES OF NETWORK INTERFACE CARDS
+					-> Limited transfer speed
+					-> Limited compatibility
+					-> Driver issues
+					-> Cost 
+					-> Power consumption 
+					-> Maintenance
+					-> Security risks
+	
+TYPES OF THE SERVERS IN COMPUTING:
+	-> WEB SERVER 
+		-> The server that is in chargeo f publishing a website on the internet is known as a wev server'
+		-> A server that provides hosting also called hosting over the internet protocol is called a web server
+		-> Types Of Web Server:
+			-> Apache HTTP server
+			-> Internet Information services 
+			-> Lighttpd
+			-> Nginx
+			-> Sun java system web server 
+			
+	-> DATABASE SERVER
+		-> A database server manages a database and provides database services to clients. 
+		-> The server manages data access and retrieval as well as the completion of client requests. 
+		-> A database server is a computer that runs database software and is dedicated to providing database services.
+		-> Types of Database server:
+			-> Oracle
+			-> IBM DB2
+			-> Microsoft SQL Server
+			-> MySQL
+			-> SAP HANA
+			-> MS Access
+			
+	-> EMAIL SERVER
+		-> A mail server, also known as an email server, is a computer system that sends and receives emails.
+		-> When you send an email, it passes through several servers before arriving at its destination.
+		-> Mail servers are classified into two types: outgoing mail servers and incoming mail servers.
+		-> SMTP: The SMTP protocol handles all incoming mail and sends emails. SMTP stands for Simple Mail Transfer Protocol and refers to the outgoing mail server.
+		-> IMAP / POP: There are two types of incoming mail servers-POP3 and IMAP. Post Office Protocol version 3 (POP3) servers are well-known for getting your computer's Inbox contents. 
+		-> IMAP servers, which stand for Internet Message Access Protocol, are used for one-way mailbox synchronization
+	-> WEB PROXY SERVER
+		-> A proxy server is a web server that serves as a conduit between a client program, such as a browser, and the actual server. 
+		-> It sends queries to the accurate server on the client's behalf and sometimes fulfills the claim itself.
+		-> Web proxy servers offer two key functions: they filter requests and increase performance
+		-> Benefits of using a web proxy server are as follows:
+			-> More privacy
+			-> Access to restricted websites
+			-> Improved performance and bandwidth savings
+			-> Enhanced Security
+		-> The most popular and greatest web proxy servers are as follows:
+			-> SmartProxy
+			-> Bright Data
+			-> HMA
+			-> Whoer
+			-> Hide.me
+	-> DNS SERVER
+		-> The Domain Name System (DNS) is the Internet's telephone directory. 
+		-> DNS is responsible for finding the correct IP address for websites when users enter their domain names, such as 'google.com' or 'nytimes.com,' into web browsers.
+		-> The addresses are then used by browsers to communicate with origin servers or CDN edge servers to access website information.
+		-> All this is possible by DNS servers, which are specialized machines for answering DNS queries.
+		-> To resolve names, the DNS system has resolving systems. Name resolvers are used to find IP addresses associated with domain names. DNS clients are the people who use resolvers.
+		-> A DNS system can have many name resolvers
+		-> As a result, if one of them becomes incapacitated, the others take over and ensure that communication is not disrupted.
+	-> FTP SERVER 
+	-> FILE SERVER 
+	-> DHCP SERVER
+	-> CLOUD SERVER
+	-> APPLICATION SERVER
+	-> PRINT SERVER
+	-> NTP SERVER
+	-> RADIUS SERVER
+	-> SYSLOG SERVER 
+	-> PHYSICAL SERVER 
+	
+
+					

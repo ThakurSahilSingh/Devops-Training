@@ -1,0 +1,223 @@
+HOW TO CHOOSE A SUITABEL DATA CENTER
+
+-> Scalability:
+	-> The scalability of data center storage is an important element that influences the business.
+	-> Compared with NAS and SAN, DAS has very limited scalability. Before making a decision, companies need to investigate the amount of data to store according to their requirements.
+-> Performance:
+	-> Whether data center storage has a good performance or not affects the company's choices a lot.
+	-> Then NAS is not a good choice if the company takes the performance of data center storage seriously.
+-> IT staff:
+	-> Some companies may prefer data center storage which is easy to manage and deploy.
+	-> Due to the complexity of SANs, professional IF staff is required to maintain the device, which can be a burden for some companies.
+-> Usage case:
+	-> Because of its low price and limited IT resources, DAS is more suitable for small-to-medium-sized businesses.
+	-> For those larger enterprises looking for better performance and scalability, NAS and SAN can better meet their needs.
+	
+What IS A DATA CENTER FIRE WALL 
+-> A data center firewall is a software or hardware device that is used by data centers for maximizing security.
+-> It is a 5-tuple network layer that serves as a multitenant software-designed networking (SDN) device.
+-> The purpose of a firewall is to monitor the traffic entering and exiting an organization’s network.
+-> In the industry jargon, this network is called a perimeter. For fragmented network perimeter, the firewall can work at subsequently smaller levels down to the workload level, filtering out external threats.
+
+
+HOW DOES A DATA CENTER FIRE WALL WORKS 
+-> Data center administrators install and configure the firewall by creating access control lists (ACLs) which are applied to a network interface or a subnet.
+-> They implement the firewall policies at the switch port of each tenant VM (virtual machine), and the Network Controller pushes these through the portal for distribution amongst all applicable hosts.
+-> This way, tenant administrators can enable and configure the firewall to divert unwanted traffic from internet and intranet networks securing their own.
+-> The firewall can control the traffic flow in multiple ways depending on their designs.
+-> Legacy architectures typically offer static packet filtering, stateful inspection, and proxy services.
+-> Modern-day firewalls have supplemented the architecture with advanced threat analysis, intrusion detection (IDS/IPS), and application context.
+-> These modern analytics make it much easier to evaluate the content of incoming traffic.
+
+image = https://resource.fs.com/mall/generalImg/BpU4bnEzfosXIaxpowxcq4OanXe.png
+
+TYPES OF FIREWALLS 
+
+There are many types of firewalls, often categorized by system protected, form factor, network placement, and data filtering method, including:
+
+-> Network firewall:
+-> Host-based firewall
+-> Hardware firewall
+-> Software firewall
+-> Internal firewall
+-> Distributed firewall
+-> Perimeter firewall
+-> Next-generation firewall (NGFW)
+-> Packet filtering firewall
+-> Circuit level gateway
+-> Web application firewall
+-> Proxy firewall
+-> Stateful inspection firewall
+
+Firewall Types by Systems Protected:
+	-> Network firewall:
+		-> image = https://www.paloaltonetworks.com/content/dam/pan/en_US/images/cyberpedia/types-of-firewalls/network-firewall.png?imwidth=1366
+		
+		-> A network firewall is positioned at the juncture between trusted and untrusted networks, such as internal systems and the internet.
+		-> Its primary role is to monitor, control, and decide on the validity of incoming and outgoing traffic based on a predefined set of rules.
+		-> These rules are designed to prevent unauthorized access and maintain network integrity.
+		-> The operational function of a network firewall lies in its ability to scrutinize each data packet.
+		-> By comparing packet attributes like source and destination IP addresses, protocol, and port numbers to its established rules, it effectively blocks potential threats or undesired data flow.
+		-> Whether implemented as hardware, software, or both, its placement ensures comprehensive traffic screening.
+		-> Beyond simple traffic regulation, network firewalls offer logging capabilities.
+		-> Logs assist administrators in tracking and probing suspicious activities.
+		
+	-> Host-based firewall
+		-> image = https://www.paloaltonetworks.com/content/dam/pan/en_US/images/cyberpedia/types-of-firewalls/host-based-firewall.png?imwidth=1366
+		
+		-> A host-based firewall is software that operates on a singular device within a network.
+		-> It is installed directly onto individual computers or devices, offering a focused layer of protection against potential threats.
+		-> By examining the incoming and outgoing traffic of that specific device, it effectively filters harmful content, ensuring that malware, viruses, and other malicious activities do not infiltrate the system.
+		-> In environments where network security is paramount, host-based firewalls complement perimeter-based solutions.
+		-> While perimeter defenses secure the broader network's boundaries, host-based firewalls bolster security at the device level.
+		-> This dual protection strategy ensures that even if a threat surpasses the network's primary defenses, individual computers remain shielded.
+
+	
+Firewall Types by Form Factors
+	-> Hardware Firewall
+		-> image = https://www.paloaltonetworks.com/content/dam/pan/en_US/images/cyberpedia/types-of-firewalls/hardware-firewall.png?imwidth=1366
+		
+		-> A hardware firewall is a physical device placed between a computer or network and its connection to the internet. 
+		-> It operates independently of the host device, examining inbound and outbound traffic to ensure compliance with set security rules. 
+		-> By actively analyzing packets of data, the hardware firewall can identify and block threats, providing a robust barrier against potential cyber intrusions.
+		-> The operation of a hardware firewall involves connecting it directly between the internet source and the target network or system. 
+		-> Once implemented, all internet traffic, whether incoming or outgoing, must pass through this device. 
+		-> As it inspects each data packet, decisions are made based on predefined security policies. 
+		-> Malicious or suspicious traffic is blocked, so only safe and legitimate data reaches the internal network. 
+		-> Threats are intercepted before reaching internal systems, offering a proactive approach to network security.
+
+	-> Software firewall 
+		-> image = https://www.paloaltonetworks.com/content/dam/pan/en_US/images/cyberpedia/types-of-firewalls/software-firewall.png?imwidth=1366
+		
+		-> A software firewall is a firewall in a software form factor rather than a physical appliance, which can be deployed on servers or virtual machines to secure cloud environments.
+		-> Software firewalls are designed to protect sensitive data, workloads and applications in environments wherein it is difficult or impossible to deploy physical firewalls.
+		-> Software firewalls embody the same firewall technology as hardware firewalls (also known as next-generation firewalls or NGFWs).
+		-> They offer multiple deployment options to match the needs of hybrid/multi-cloud environments and modern cloud applications.
+		-> Software firewalls can be deployed into any virtualized network or cloud environment.
+		
+Types of Software Firewalls
+ 
+-> Container Firewalls
+-> Virtual Firewalls
+-> Cloud Firewalls
+-> Managed Service Firewalls
+
+
+HARWAWRE FIREWALL VS SOFTWARE FIREWALL 
+-> A hardware firewall is a standalone physical device positioned between the network and its connected devices.
+-> It monitors and controls both incoming and outgoing network traffic based on predefined security policies.
+-> Deployment of a hardware firewall requires skilled personnel to ensure proper setup and ongoing management.
+-> On the other hand, a software firewall operates within a server or virtual machine.
+-> This type of firewall runs on a security-centric operating system, typically layered over generic hardware resources.
+-> It can often be rapidly implemented using cloud automation tools.
+-> Both hardware and software firewalls provide essential protection for network security, with their choice determined by specific requirements and deployment contexts.
+
+Firewall Types by Placement within Network Infrastructure
+	-> Internal Firewall
+ 
+		-> IMAGE = https://www.paloaltonetworks.com/content/dam/pan/en_US/images/cyberpedia/types-of-firewalls/internal-firewall.png?imwidth=1366
+ 
+		-> An internal firewall functions primarily within a network's confines, targeting security threats that may have already penetrated the perimeter defenses.
+		-> Unlike external or perimeter firewalls which focus on incoming external threats, internal firewalls concentrate on the traffic between devices within the network.
+		-> This is relevant because not all threats originate from the internet.
+		-> Issues can arise from within an organization, be it unintentional employee errors or malicious intentions.
+		-> This type of firewall operates under the principle of Zero Trust.
+		-> It doesn't automatically trust any activity just because it originates from within the network.
+		-> By segmenting the network into distinct zones, each with its specific security measures, the firewall ensures potential threats don't spread unchecked across the entire system.
+		-> Microsegmentation, for instance, is a technique wherein the network is divided into smaller, isolated zones, enhancing security. 
+	
+	-> Distributed Firewall 
+		-> image = https://www.paloaltonetworks.com/content/dam/pan/en_US/images/cyberpedia/types-of-firewalls/distributed-firewall.png?imwidth=1366
+		-> A distributed firewall is a network security mechanism designed to safeguard an organization's entire infrastructure.
+		-> Unlike traditional firewalls, which are typically concentrated on a single node or device, distributed firewalls operate across a network.
+		-> They harness the capabilities of multiple devices to monitor and regulate traffic, ensuring consistent and complete protection.
+		-> One primary advantage of distributed firewalls is their ability to monitor both internal and external traffic.
+		-> Conventional firewalls, historically, have focused on external threats.
+		-> However, as security threats evolve, the need to monitor internal traffic for potential threats has become paramount.
+		-> Distributed firewalls fill this gap, examining traffic both within and entering the network, thus offering a more comprehensive security layer.
+		
+	-> Perimeter Firewall :
+		-> image = https://www.paloaltonetworks.com/content/dam/pan/en_US/images/cyberpedia/types-of-firewalls/perimeter-firewall.png?imwidth=1366
+		-> A perimeter firewall establishes the boundary between a private network and the public domain of the internet.
+		-> Functioning as the primary defense, this type of firewall meticulously inspects every data byte attempting to pass through.
+		-> This safeguards the private network from unwarranted and potentially harmful data.
+		-> A significant role of a perimeter firewall involves differentiating and subsequently allowing or disallowing traffic based on pre-defined parameters, ensuring only legitimate and safe data gains entry.
+		-> The efficacy of a perimeter firewall hinges on its ability to recognize and discern the nature of data packets.
+		-> It examines both the header information and the payload of each packet to determine intent.
+		-> This level of examination aids in the identification of potential threats, like malware or indications of a looming cyberattack, facilitating timely preventive action.
+
+
+Firewall Types by Data Filtering Method
+	-> Next Generation Firewll:
+		-> image = https://www.paloaltonetworks.com/content/dam/pan/en_US/images/cyberpedia/types-of-firewalls/ngfw.png?imwidth=1366
+		
+		-> A next-generation firewall (NGFW) extends the capabilities of traditional firewalls, offering more comprehensive security solutions.
+		-> Unlike their predecessors focused primarily on stateful inspection, NGFWs provide enhanced features to understand and control application traffic, integrate intrusion prevention mechanisms, and utilize cloud-sourced threat intelligence.
+		-> This evolved approach ensures a more meticulous inspection of data packets, accounting for the intricate nuances of modern cyber threats.
+		-> Beyond access control, NGFWs are adept at addressing modern challenges like advanced malware and sophisticated application-layer attacks.
+		-> They delve deeper into the data, examining the nature of the traffic and identifying patterns that could signal potential threats. 
+		-> The integration of threat intelligence sources within NGFWs ensures they remain updated with the latest threat vectors, maintaining their effectiveness against evolving cybersecurity challenges.
+		-> The emergence of NGFWs represents a significant stride forward. By marrying the fundamental features of traditional firewalls with advanced security capabilities, NGFWs offer a robust, multi-faceted line of defense.
+		-> Their ability to operate at the application layer and integrate additional protection mechanisms makes them an indispensable asset in safeguarding corporate networks from both conspicuous and covert threats.
+	
+	-> Packet Filtering Firewall
+		-> image = https://www.paloaltonetworks.com/content/dam/pan/en_US/images/cyberpedia/types-of-firewalls/packet-filtering-firewall.png?imwidth=1366
+
+		-> Packet filtering firewalls operate at the network layer, responsible for regulating the flow of data packets between networks.
+		-> These firewalls rely on pre-defined rules that evaluate specific attributes of the packets such as source IP, destination IP, ports, and protocols.
+		-> If the attributes match the established rules, the packet is allowed to pass through. If not, the packet is blocked.
+		-> Types of packet filtering firewalls can be further broken down into static packet-filtering firewalls, dynamic packet-filtering firewalls, stateless packet-filtering firewalls, stateful packet-filtering firewalls.
+		
+	-> Circuit Level Gateway
+		-> image = https://www.paloaltonetworks.com/content/dam/pan/en_US/images/cyberpedia/types-of-firewalls/circuit-level-gateway.png?imwidth=1366
+		
+		-> A circuit-level gateway functions primarily at the session layer of the OSI model.
+		-> Its role is to oversee and validate the handshaking process between packets, specifically for TCP and UDP connections.
+		-> By examining the handshake process and the IP addresses associated with packets, this firewall identifies legitimate traffic and deters unauthorized access.
+		-> A circuit-level gateway primarily focuses on header information, ensuring the traffic aligns with the firewall's rule set without delving into the actual content of the data packets.
+		-> When a user seeks to initiate a connection with a remote host, the circuit-level gateway establishes a circuit, which is essentially a virtual connection between the user and intended host.
+		-> This gateway then supervises the traffic traversing this circuit.
+		
+	-> Web Application Firewall 
+		-> image = https://www.paloaltonetworks.com/content/dam/pan/en_US/images/cyberpedia/types-of-firewalls/web-application-firewall.png?imwidth=1366
+		
+		-> A web application firewall, commonly referred to as WAF, serves as a specialized layer of protection for web applications, web servers, and APIs.
+		-> It functions by examining and filtering HTTP traffic, thereby safeguarding web applications from threats like cross-site-scripting (XSS), SQL injection, and file inclusion.
+		-> WAFs differentiate themselves by operating at Layer 7, specifically targeting application layer threats.
+		-> Positioned in front of web applications, WAFs act as reverse proxies.
+		-> This means that they intercept and inspect requests bound for the web application, ensuring only legitimate traffic passes through.
+		-> Any suspicious or malicious traffic is promptly blocked, preventing potential attacks.
+		-> This architecture not only enhances the security of web applications but aids in shielding applications from direct exposure to internet threats.
+		-> To maintain efficiency, WAFs employ policies or sets of rules.
+		-> These rules help the firewall discern between benign and potentially malicious traffic. 
+		
+	-> Proxy Firewall
+		-> image = https://www.paloaltonetworks.com/content/dam/pan/en_US/images/cyberpedia/types-of-firewalls/proxy-firewall.png?imwidth=1366
+		
+		-> A proxy firewall stands as a vital defense mechanism for networks, operating at the application layer.
+		-> Also referred to as an application firewall or gateway firewall, it primarily functions as an intermediary, filtering messages between computer systems and external servers.
+		-> By doing so, it safeguards network resources from potential cyber threats.
+		-> Unlike conventional firewalls, which do not decrypt or extensively inspect application protocol traffic, proxy firewalls delve deeper.
+		-> They scrutinize traffic entering and leaving a network, identifying signs of potential cyberattacks or malware.
+		-> Central to their operation, firewalls maintain their own Internet Protocol (IP) addresses.
+		-> This design ensures that external networks cannot directly access the protected internal network.
+		
+	-> Stateful Inspection Firewall
+		-> 	image = https://www.paloaltonetworks.com/content/dam/pan/en_US/images/cyberpedia/types-of-firewalls/stateful-inspection-firewall.png?imwidth=1366
+		
+		-> Stateful inspection firewalls are integral in active network connection monitoring.
+		-> By tracking these connections, they analyze the context of incoming and outgoing traffic, ensuring only safe data packets traverse the network. 
+		-> Located at Layers 3 and 4 of the Open Systems Interconnection (OSI) model, their primary function is to filter traffic based on its state and context. 
+		-> This method is more thorough than mere packet-level protection because it understands the broader context of data exchanges.
+		-> The underlying technology of a stateful firewall is its ability to perform packet inspection. 
+		-> It scrutinizes the contents of each data packet to determine if it matches the attributes of previously recognized safe connections.
+	
+	-> Layer 3 vs. Layer 7 Firewall
+		-> A Layer 3 firewall functions at the network layer of the Open Systems Interconnection (OSI) model.
+		-> It primarily focuses on filtering traffic based on parameters like IP addresses, port numbers, and specific protocols, making its approach broad and akin to routers' operations.
+		-> This type of firewall offers efficient and wide-ranging coverage, providing protection by allowing or denying packets based on their source and destination details.
+		-> Conversely, a Layer 7 firewall operates at the application layer of the OSI model.
+		-> Its main advantage lies in its ability to deeply inspect the content within data packets.
+		-> By analyzing the specific contents, it can discern between benign and malicious application-specific traffic, effectively guarding against threats like SQL injections or other application-layer attacks.
+		
+

@@ -1,0 +1,343 @@
+
+ADVANTAGES AND DISADVANTAGES OF CLIENT SERVER ARCHITECTURE:
+
+Advantages  
+	Some of the advantages are: 
+
+	1) It is centralised, which means that all data and services are stored and managed in a single place. This makes it easier to maintain, update, and secure the system. 
+
+	2) It is cost-efficient, as it requires less hardware and software resources for the client side. The client only needs a network connection and an application or web browser to access the server. 
+
+	3) It has high performance and low latency, as the server can handle many requests from many clients simultaneously and efficiently. 
+
+Disadvantages 
+	Some of the disadvantages are: 
+
+	1) It has limited scalability, as it depends on the capacity and availability of the server. If the server is overloaded or fails, the system may not function properly or at all. 
+
+	2) It has high network dependency, as it relies on the network connection between the client and the server. If the network is slow or disrupted, the system may experience delays or errors. 
+
+	3) It has complex architecture, as it involves multiple components and layers that need to be designed, implemented, and coordinated. The system may also face challenges such as security, synchronisation, and compatibility. 
+	
+	
+OSI MODEL:
+
+	OSI Model image = https://www.imperva.com/learn/wp-content/uploads/sites/13/2020/02/OSI-7-layers.jpg.webp
+	
+	
+	7.Application Layer:
+		 
+		image = https://www.imperva.com/learn/wp-content/uploads/sites/13/2020/05/application-layer.png
+		
+		->Application layer serves as the interface between the end user applications and the underlying network services
+		->The layer provides protocols and services that are directly utilized by end user applications to communicate across the network 
+		->key funtionalities of the application layer includes resource sharing, remote file access and network management
+		->Examples of protocols operating at application includes HTTP for web browising , FTP for file transfer, SMTP for email services and DNS for converting Domain names to IP addresseas
+		->These protocols ensure that user applications can effectly communicate with each other and with servers over a network 
+
+	6.Presentation Layer:
+	
+		image = https://www.imperva.com/learn/wp-content/uploads/sites/13/2020/05/presentation-layer.png
+		
+		-> The presentation-layer is also know as syntax layer 
+		-> It is responsible for translating the data between the application layer and the network format
+		-> It ensures that the data sent from the application layer of one system is readable by the application of another system 
+		-> This layer handles data formatting, encryption and compression facilitating interoperability between different systems
+		-> One of the key roles of presentatoin layer is data translation and code conversion 
+		-> It transforms data into a format that the application layer can understand 
+		-> It also includes encryption protocols to ensure data security during transmision and compression protocols to reduce the amount of data for efficient transmission
+
+	5.Session Layer:
+	
+		image = https://www.imperva.com/learn/wp-content/uploads/sites/13/2020/05/session-layer.png
+		
+		-> The session manages and controls the connections between computers 
+		-> It establishes, maintaines and terminates connections , ensuring that data exchanges occur efficiently in an organized manner 
+		-> THe layer is responsible for check pointing and recovery which allows sessions to resume after operations 
+		-> The protocols at the session layer include (RPC) Remote  procedure call which enables a program to execute a procedure on a remote host as if it were local and the session establishment phase in protocols like sql 
+		-> These services enable reliable communication especially in complex network environments
+		
+	4.Transpot Layer
+	
+		image = https://www.imperva.com/learn/wp-content/uploads/sites/13/2020/05/transport-layer.png
+		
+		->  The transpot layer provides end to end communication services for applications 
+		->  It ensures complete data transfer, error recovery and flow control between hosts
+		->  this layer segments and reasembles data for efficient transmission and provides reliability with error detection and correction mechanisims
+		->  Protocols at this layer includes TCP and UDP 
+		
+			NOTE :
+				->  TCP is connection oriented and esures reliable data transfer with error checking and flow control, making it suitable for applications like web browsing and email 
+				->  UDP is connection less offering faster but less reliable transmission usually suitable for applicaions like video gaming , video streaming and online gaming 
+	
+	3.Network Layer:
+	
+		image = https://www.imperva.com/learn/wp-content/uploads/sites/13/2020/05/network-layer.png
+		
+		-> Network layer is responsible for data routing forwarding and addressing 
+		-> It determines the best physical path for data to reach its destination based on network conditions, the priority of sevice and other factors 
+		-> This layer manages logical addressing through ip addresses and handles packet forwarding
+		-> protocols for this layer include IP for routind and addressing , ICMP(Internet control message protocol) for diagnostic and error reporting purposes and routing protocols like RIP(Routing information protocol ) that manages routing of data across the networks 
+
+	2.Data-Link Layer:
+	
+		image = https://www.imperva.com/learn/wp-content/uploads/sites/13/2020/05/data-link-layer.png
+		
+		-> The data link layer is responsible for node to node data transfer, error detection and correction 
+		-> It ensures that data is transmitted to the correct device on local network segment 
+		-> THis layer manges MAC And is devided into 2 sublayers 
+			-> LLC - Logical link control
+			-> MAC - Media access control
+		-> PRotocols include ethernet which defines the rules for data transmission over local area networks and point to point protocol for direct connections between two network nodes 
+		-> It also has mechanisims for detecting errors and correcting those errors that occur in physical layer 
+		
+	1.Physical Layer:
+	
+		image = https://www.imperva.com/learn/wp-content/uploads/sites/13/2020/05/physical-layer.png
+		
+		-> This physical layer is responsible for physical connection between devices 
+		-> It defines the hardware elements involved in the network, including cables, switches, and other physical components.
+		-> This layer also specifies the electrical, optical, and radio characteristics of the network.
+		-> Functions of the Physical Layer include the modulation, bit synchronization, and transmission of raw binary data over the physical medium.
+		-> Technologies such as Fiber Optics and Wi-Fi operate at this layer, ensuring that the data physically moves from one device to another in the network.	
+	
+NOTE : Refer "IOT OSI MODEL" , browse host to host communication 
+
+
+
+PROTOCOLS:
+	-> There are three types of protocols in the network
+		->network communication Protocols
+			->HTTP
+			->TCP
+			->UDP
+			->Border gateway protocol (BGP)
+			->Address resolution protocol(ARP)
+			->Internet Protocol(IP)
+			->Dynamic Host Configuration protocol (DHCP)
+		->network management Protocols
+			->ICMP(Internet Control Message Protocol)
+			->Simple Network Management Protocol(SNMP)
+			->FTP
+			->POP3(Post Office Protocol)
+			->TELNET
+		->network security Protocols
+			->HTTPS
+			->SSL(Secure Socket Layer)
+			->TLS(Transpot Layer Security)
+		->Othet Protocols
+			->IMAP(Internet message access protocol)
+			->SIP(Sessoion Initiation Protocol)
+			->RTP(RealTime Transpot Protocol)
+			->RLP(Resource Location Protocol)
+			->Point to Point Tunneling Protocol(PPTP)
+
+
+PORTS IN NETWORKING		
+	-> When ever any application in one computer sends data to another application of a different computer then it sends using IP address and MAC Address.
+	-> The System undrestands that this data is for a specific application through the port mentioned 
+	-> In a computer data is first received using their IP or MAC address then it is delivered to application whose port number is with the data packets
+	
+	TYPES OF PORTS:
+		->Well Known Ports
+			->It is from the range 0 to 1023
+			->It is reserved for common and specifically used services 
+			->It is used by widely adopted protocols and services like HTTP(port 80), FTP(port 21), DNS(port 53), SSH(port 22) etc.
+		->Registered Ports
+			->It is from range 1024 to 49151
+			->These are used by applications or services that are not as common 
+			->But it is used by those application or services which require its specific port
+			->Organizations can ask IANA(Internet Assigned Number Authority) for any specific port number within this range 
+		->Dynamic Ports
+			->It is from range 49152 to 65535
+			->It is also known as Ephermeral or PRivate PORT
+			->It is used for those connections that are temporary or short lived
+			->It is not registered or assigned and can be used by any process
+	
+	WHY PORTS ARE REQUIRED:
+	
+		->Multiplexing and Demultiplexing
+		->End to End Communication
+		->Protocol Identification
+		->Security and Firewalls
+		->Load Balancing
+		->Custom Application Communication
+
+
+	SOME IMPORTANT PORTS :
+	
+	Port-Number		Service			Used For					Protocol
+	
+		20			FTP-DATA		File Transfer					TCP
+		21			FTP				File Transfer Control			TCP
+		22			SSH				Secure Remote Login				TCP
+		23			TELNET			Unecrypted Remote Access		TCP
+		25			SMTP			Email Routing					TCP
+		53			DNS				Domain Name Resolution			UDP/TCP
+		67			DHCP-S			DHCP Server						UDP
+		68			DHCP-C			DHCP CLIENT						UDP
+		69			TFTP			TRIVAL FILE Transfer			UDP
+		80			HTTP			WEB TRAFFIC						TCP
+		110			POP3			EMAIL RETRIVAL					TCP
+		123			NTP				TIME SYNCHRONIZATION 			UDP
+		143			IMAP			EMAIL Management				TCP
+		443			HTTPS			SECURE WEB TRAFFIC 				TCP
+		3306		MySQL			DATABASE SERVICES				TCP
+		3389		RDP				REMOTE DESKTOP Access			TCP
+		5432		POSTGRESQL		DATABASE SERVICES				TCP
+		5060		SIP				VoIP COMMUNICATION 				UDP/TCP
+		5900		VNC				REMOTE DESKTOP SHARING			TCP
+		8080		HTTP-ALT		ALTERNATIVE WEB TRAFFIC			TCP
+		2049		NFS				NETWORK FILE SYSTEM 			TCP/UDP
+		161			SNMP			NETWORK MANAGEMENT				UDP
+		162			SNMP-TRAP		SNMP TRAP MESSAGES 				UDP
+		445			SMB				FILE SHARING					TCP
+		27017		MONGODB			DATABASE SERVICES				TCP
+		5000		UPnP			UNIVERSAL PLUG AND PLAY			UDP/TCP
+		
+SUBMARINE CABLES
+	image = https://en.wikipedia.org/wiki/Submarine_communications_cable#/media/File:Submarine_cable_cross-section_3D_plain.svg
+	
+		1   – Polyethylene
+		2   – Mylar tape
+		3   – Stranded steel wires
+		4   – Aluminium water barrier
+		5   – Polycarbonate
+		6   – Copper or aluminium tube
+		7   – Petroleum jelly
+		8   – Optical fibers
+		
+	->Submarine cables play a major role in global interconnected networks 
+	->It carries around 99% of international communication traffic 
+	->There has been an exponential increase in the demand for data and band width intensive applications which includes audio and video streaming and growing demand for cloud based services 
+	->Submarine cables exist from 1850s and it was used for telegraph and later telecommunication applications 
+	->After emergence of optical fibers we are using optical fibers in the submarine cables
+	->The currnet speed is around 2TB pre second and there are appoximately  400 submarine cables with 1.2M KM criss-crossing the earth
+	->Multiple global telecom companies and internet ptoviders have come together to finance this global submarine network cable connectivity. 
+	
+	FACTORS CONTRIBUTING TO THE GROWTH OF GLOBAL SUBMARINE CABLES
+		->Cloud Services
+		->Data centers
+		->Content Delivery Networks
+		->Enterprice Applications 
+		->OTT
+		->Mobile Applications
+
+TYPES OF NETWORKS;
+	LOCAL AREA NETWORK :
+		->Short for local area network 
+		->connects a group of computers wihtin a limited geographical area 
+		->High bandwidth for data transfer 
+		->Owned by private companies or individuals 
+		->Limited to 100 to 1000 meters
+		->Lower setups cost due to inexpensive devices->Higher Data transfer speed with 10,100,and 1000 Mbps high speed ethernet
+	WIDE AREA NETWORK :
+		->Covers a large geographical area such as a state country or a continent 
+		->Low bandwidth for data transfers
+		->Established under distributed ownership
+		->spans a huge area of 100000 KM
+		->Higher setup cost than LAN and MAN
+		->Loq data transfer reattes between 10 to 20 Mbps
+	METROPOLITIAN AREA NETWORK :
+		->Confined to a city or town . Distance coverage is larger than LAN and smaller than WAN
+		->Bandwidth is moderate for data transfers 
+		->Ownership can be public or private
+		->Distance coverage is up to 100 KM
+		->Moderate installations costs
+		->Speed can go up tp 100 Mbps
+		
+MODEM VS ROUTER:
+	
+	MODEM IMAGE = https://media.geeksforgeeks.org/wp-content/uploads/20230826113414/Modembak.png
+	
+	->A Modem is short form of modulator/demodulator. The Modem is a hardware component that can connect and other devices such as routers and switches to the internet
+	->Modems convert or modulate the anlog signals coming from telephone wire into a digital form that is in the form of 0s ans 1.
+	->It acts as a bridge between the telephone line and the computer . it converts the input analog signal to a digital and directs it ti the conputer and vice versa
+	
+	
+	ROUTER IMAGE = https://media.geeksforgeeks.org/wp-content/cdn-uploads/Network_devices.jpg
+	
+	->The router is supposed to connect totally different networks along. 
+	->The essential distinction between electronic equipment and a modem router is that electronic equipment is necessary for connecting your electronic network to the web whereas, a router is crucial to direct the trail to the traffic of information packets on the network.
+
+
+							MODEM																									ROUTER
+-> The modem is crucial to access the net because it connects your laptop to ISP.							-> While in which you can access the net while not employing a router.
+-> In modem, the information packet is not examined; thus, the security threat is often there.				-> While in the router, the information packet is always examined before forwarding it, to work out the threat.
+-> It is placed straight to the computer or it is also placed between a telephone line and a router.		-> While a router is placed between electronic equipment and a network.
+-> The modem performs signal decoding by decoding the ISP signal.											-> While a router does not perform signal decoding.
+-> Modem brings the requested info from the net to your network.											-> While the router distributes that requested data to your PC.
+-> Modem is not secure.																						-> Router is highly secure.
+-> Modem works on the Data Link Layer of the OSI Model														-> Router works on the Physical Layer and Network Layer of the OSI Model.
+
+
+	TYPES OF MODEM:
+		->DIAL UP: This is one of the earlier types of modem connection that uses a phone line to connect to an Internet Service Provider, But these are very slow modems.
+		->DIGITAL SUBSCRIBER LINE: DSL provides high speed internet access over telephonic lines, but they operate on different frequency bands.
+		->SATELLITE MODEM: They are used for accessing the internet over satellite communication, they are used in that area where the normal internet connection is not possible.
+		->CABLE: These are those modems that use a cable TV line to connect with an Internet Service Provider. This is the highly used type of modem connection.
+		->INTERNAL MODEM: The internal modem is connected inside the system/computer system, due to which its rate of data transmission is very slow and its installation is quite complex.
+		->EXTERNAL MODEM: An external provides modem is connected outside the system/computer system by using a cable , it provide high data transmission rate, it is a alittle bit expensive but its installation is very easy.
+		->Two-wire Modem: It uses a pair of wire that is why its called Two-wire Modem, these two wires are used for incoming and outgoing signals.
+		->Four-wire Modem: It uses the pair of wires for incoming and outgoing signal. So it is double of Two-wire Modem, that’s why this is called Four-wire Modem.
+
+TOPOLOGY:
+	1.Point To Point Topology:
+		image = https://media.geeksforgeeks.org/wp-content/uploads/20240614235231/Point-to-point-topology.png
+		->Point to Point is a simple topology thay directly limks two nodes and reserves the entire bandwidth of the connection for them to communicate with one another
+		->Physically point to point connections rely on a cable or wire that connects the two encpoints. 
+		->However logical topological connections using satellite links and microwaves aremore common now a days
+	
+	2. Bus Topology:
+		image = https://media.geeksforgeeks.org/wp-content/uploads/3-55.png
+		-> In a bus topology all the nodes are linked using a single cable with terminator on both ends.
+		-> This configuration sees one main cable acting as the backbone for the whole network
+		
+	3. Ring Topology:
+		image = https://images.spiceworks.com/wp-content/uploads/2022/03/10110904/17.png
+	
+	4. Star Topology
+		image = https://media.geeksforgeeks.org/wp-content/uploads/20241028174732747554/Star-Topology.png
+	
+	5. Tree Topology:
+		image = https://images.spiceworks.com/wp-content/uploads/2022/03/10110848/19.png
+		
+	6. Mesh Topology:
+		image = https://images.spiceworks.com/wp-content/uploads/2022/03/10110856/20.png
+		
+	7. Hybrid Topology:
+		image = https://images.spiceworks.com/wp-content/uploads/2022/03/10110834/21-3.png
+
+PEER TO PEER ARCHITECTURE:
+	
+	IMAGE = https://media.geeksforgeeks.org/wp-content/uploads/20220826190244/GFGP2PArchitecture.png
+	
+	->Peer to peer architecture customizes the protocols to ensure decentralized networks can support specific use cases 
+	->The purpose of the protocols is to ensure that the data is distributed across the network and that nodes can locate and exchange data with each other 
+
+	PROS:
+		-> There is no single point of failure since the network is not dependent on a central server.If one nodes fails the network can still function 
+		->P2P networks will narutally scale out network resources as more peers join 
+		->Since there is no need for a central server the cosr of setting up and maintaining the network can be lower 
+		->P2P networks can offer a degree of anonymity and privacy since there isno central authority controlling or monitoring thr network 
+	CONS:
+		->Without a cntral authority it can be challenging to enforce network security policies uniformly across all nodes 
+		->It can be difficult to ensure data integrity across all peers if nodes randomly join and leave 
+		->While P2P networks can scale easily the performance can degreade if too many oeers need to access the same resources simultaneously
+		->Without central control it can be difficult to prevent the distribution of harmful or unethical content 
+
+TYPES OF VPN:
+	1.Site to Site VPN
+		image = https://www.paloaltonetworks.com/content/dam/pan/en_US/images/cyberpedia/site-to-site-vpn/site-to-site-vpn.png?imwidth=1366
+	
+	2.Remote Access VPN
+		image = https://www.paloaltonetworks.com/content/dam/pan/en_US/images/cyberpedia/remote-access-vpn.png?imwidth=1366
+		
+	3.Cloud VPN
+		image = https://www.paloaltonetworks.com/content/dam/pan/en_US/images/cyberpedia/cloud-remote-access-vpn.png?imwidth=1366
+		
+	4.SSL VPN
+		image = https://www.paloaltonetworks.com/content/dam/pan/en_US/images/cyberpedia/ssl-vpn.png?imwidth=1366
+		
+	5.Double VPN
+		image = https://www.paloaltonetworks.com/content/dam/pan/en_US/images/cyberpedia/double-vpn.png?imwidth=1366

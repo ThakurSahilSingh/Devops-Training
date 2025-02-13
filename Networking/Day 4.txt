@@ -1,0 +1,182 @@
+
+IP ADDRESSING
+	
+	IPV4 AND IPV6
+		IPV4 - 32 bit address - 2^32 - 4.29 billion or 429 crore IP addresses
+			world population - 8 billion - Netizens - 2 to 2.5 billion
+			
+		IPV6 - Trillion s and trillions of IP's - 128 bit     
+		
+		1. The IPV4 addressing mode has 32 bit 
+		
+			0.0.0.0					00000000.00000000.00000000.00000000
+			
+				TO
+				
+			255.255.255.255			11111111.11111111.11111111.11111111
+			
+		2. 5 Different Classes
+																					(Total IP addresses are 256 like from 0 to 255)
+			CLASS A - 0.0.0.0 TO 127.255.255.255 	-	128.0.0.0 ADDRESSES			(Half of 256 are in this class i.e 128 and left out are 128)
+			CLASS B - 128.0.0.O TO 191.255.255.255	-	64.0.0.0 ADDRESSES			(Half of the left out are in this class i.e 64, Now the left out are 64)
+			CLASS C - 192.0.0.0 TO 223.255.255.255	-	32.0.0.0 ADDRESSES			(Half of the left out are in this class i.e 32 , Now the left out are 32)
+			CLASS D - 224.0.0.0 TO 239.225.225.225	-	16.0.0.0 ADDRESSES			(the left out are equally divided into the class E and class E)
+			CLASS E - 240.0.0.0 TO 255.255.255.255	-	16.0.0.0 ADDRESSES
+			
+FTP SERVER
+	-> FTP is a network protocol that is used to transfer files between a client and a server on a computer network 
+	-> FTP is a well known protocol that was developed in the 1970s to allow two computers to transfers data over the internet 
+	-> One computer servers as the clinet sending or requesting files from the server
+	-> The FTP protocol primary mode of communication is normally port 21. On port 21 an FTP server will accept client connections 
+	-> FTP severs as well as the moer sevure SFTP sever software carry out two basic functions : Put and Get
+	-> An FTP server is useful if you have remote employees who need to submit non confidential material or if you wish to allow your clients to obtain white papers and documentation.
+	
+FILE SERVER
+	-> A file server is a central server in a computer network that serves file systems or portions of file systems to clients connected to the network 
+	-> As a result, file server provides users with a central storage location for files on internal data media that is available to all authorized clients
+	-> The server administrator establishes rigorous guidelines for which users have which acccess right: 
+	-> For example, the configuration or file authorizations of the individual file systems allow the admin to specify which files a certain user or user group may access and open as well as whether data can only be seen or additionlly added altered or deleted 
+
+DHCP server
+	-> A dhcp server is a network server that gives and assign OP addresses default gateways and other network information to client devices on an automatic basis
+	-> To rely to client broadcast inquiries it uses the standard protocol knowa ==s a dunamic host configuration protocol 
+	-> A dhcp server automatically sends the network parameters rewquiers for clients to communicate sucecessfully on the cetwork 
+	-> Without it the netork administrator mist manyally configure each client that connects to the network which can be time consuming especilally in big networks 
+	-> dhcp servers typically assigh a unique dynamic IP address to each client which changes when the clients lease for that IP address expires 
+	
+CLOUD SERVER
+	-> A cloud server os a pooled centralized server resource that is hosted and distributed across a network typically the internet and may be accessed by multiple users on demand 
+	-> CLoud servers provide all of the same services as treaditional physical servers including processing power storage and applications 
+	-> cloud servers can be situated anywhere in the worls and provide remote services via a cloud computing environment 
+	-> traditional dedicated srver hardware on the other hand is often installed on premises for the sole use of one firm 
+	-> because any software issue is isolated from your environment a cloud server is used
+	-> other cloud servrs will have no impact on yours and vice versa 
+	
+APPLICATION SERVER
+	-> An application server is software that runs on the server is written by a server programmer to provide business logic for ant application 
+	-> This server might be part of network or a dispersed network 
+	-> Server programs are typica;;y ised to give services to client programs that are either on the same system or a network
+	-> applicaion severs riduce traffic while increasing security
+	-> it is not possible to chieve ideal wev server agility by handling both http requests from web clients and passing or stoting resources from numerous webites
+	-> Applications severs fill this need withh powerfyl arvhitecture designed to handle dynamic online content requests
+	-> application servers provide programs with protection and redundancy 
+	
+	ADVANTAGES OF APPLICATION SERVER
+		-> Provides a frame work for managing all components and operating services
+		-> THey make it simple to delicer patches and security upgrades
+		-> It allows you to route requrests to other servers based on their availability 
+		-> load balancing is used to accomplish this
+		-> it ensures the sevurity of applications. It allows for fault tolerance as well as recobery failover recovery 
+		-> It saves us a lot of time
+		-> The application server dramatically enhances application performance
+
+PRINT SERVER
+	-> A print sever is a software program , network device or computer that manges print requests and provides end users and network administrators with printer queue status information 
+	-> Print servers are used in big bussiness networks as well as small or home office networks
+	-> a single dedicated computer operationg as print server in a ;arge firm manages hundreads of printers
+	-> a print server in a small office is generally a customized plug in board or tiny network device the size of hub that seves the sames function as decicated print sever while freeing u critical disk space on the workplaces limited number of pc's
+	-> a print server like other servers works on the client server architecture receiving and processing user requests
+	
+NTP SERVER 
+	-> Netowrk Time Protocol is an interent protocol that is used to sysnchronize with computer clock time sources in a network
+	-> It belongs to and is one of the earliest components of the TCP/IP suite. The word NTP refers to both the protocol and the client srver application that operates on computers
+	-> It is intended to be extremely fault tolerant scalable while also allowing remporal synchronization 
+	-> The NTP time synchronization procedure consists of three steps:
+		-> The NTP client conducts a time request exchange with NTP server
+		-> The client may then determine the connection latency and its local offset as well as change its local time to match the clock on the servers computer
+		-> Typically six exchanges over a five to ten minute period are required to ser the clock
+		
+RADIUS SERVER
+	-> RADIUS(Remote Authentication dial up user service ) is a networking protocol that connects clients and servers 
+	-> Radius is a computer network authentication , authorization and accounting(AAA) management protocol. RADIUS is a UDP based protocol that authenticates users using a shared secret
+	-> The RADIUS protocol employs a RADIUS server and radius clients
+		RADIUS SERVER: Checks users credentials against a database of usernames and passwords. IT also grants network resources access
+		RADIUS CLIENT: a netowrk connected device that provides its credentials to the RADIUS server. After that the radius server aunthenticates the client and returns authorization or access control information to it. TO establish an uthenticated session the radius sever andlclient exchange messages. THis session is used for duties sech as authorization , bookkeeping and others 
+
+	RADIUS AUTHENTICATION METHODS:
+		-> The radius server offers a variety of authentication techniques. WHEN supplied with the users username and original password , it can support PAP, CHAP, MS-CHAP, EAP, EAP TLS, UNIX login, and other authentication protocols
+			PAP: Password Authentication protocol authentication configure authentaicaion using PPP configuration files and the PAP database. PAP works similarly to the UNIX login software however PAP does not allow the iser shell access
+			CHAP: Challenge Handshake authentaicaion Protocol authenticatoin emplous challenge and response, which means that the authenticator challenges the caller to prove their identity. The challenge includes the authenticator unique ID and a random number. The caller generates the answer to send to the peer using the ID , random number and CHAP security credentials
+			MS CHAP: MS CHAP is the microsoft challenge handshake authentication protocol . It is used as an authenticaion option in the microsofts PPTP protocol implementation for VPNs
+			EAP: Extensible Authentication Protocol is a wireless network and point to connection authentaicaion mechanism
+
+SYSLOG SERVER:
+	-> The System logging protocol is a standard message format used by network devices to connect with logging servers
+	-> It was  creasted primarily to make monitoring network devices simple. Devices can use a syslog agant to send out notification messages under a variety of scenarios
+	-> These log messages comprise a timestamp , a severity rating , a device ID and event specific information.
+	-> Though it has flaws the syslog protocol is extensively used because it is simpleto construct and very open ended allowing for a variety of propritary implementations and hence the ability to monitor pratically any connected device
+	-> The syslog standard specifies three layers
+		-> SYSLOG CONTENT LAYER: This is the content in the event message . IT includes several data items such as facility codes and severity ratings
+		-> SYSLOG APPLICATION LAYER: The message is generated inerpreted routed and sorted in this layers
+		-> SYSLOG TRANSPORT LAYER: This layer is resposible for sending messages across a network.
+
+PHYSICAL SERVER
+	Some servers are solelu utilized for specific functions 
+	-> An applicaion server for exaple just hosts the webpage
+	->Physical servers are easy to use for a wife range of network tasks because of their software and hardware. Some of those transactions are
+	
+		1. Operating system updates
+		2. servics for firewalls
+		3. anti spam software
+		4. antivirus software
+		5. defense against DDOS assaults
+		6. DNS hosting
+		7. intrusion detection 
+		8. SNMP management
+		9. Database administration 
+		10. backups and restoratoin 
+		11. Security procedures
+
+
+IP ADDRESS AND SUBNETS:
+
+	INTRODUCTION TO SUBNETTING
+		Subnetting is the process of dividing a large network into smaller networks called as subnets . Subnets provides each group of devices have thier own space to communicate that ultimately helps network to work easily 
+		-> This also boosts sevurity and makes it easier to manage the  network as each subnet can be monitored and controlled separately 
+		-> In this article we will discuxx about subnetting in detail
+		
+	WHAT IS SUBNET?
+		-> A subnet is like a smaller group within a large network 
+		-> It is a way to split a large network into smaller networks so that devices present in one network can transmits data more easily 
+		-> for example in a company differnt departments can each m=have their own subnet keeping their data traffic se[areate from others 
+		-> Subnets makes the netowrk faster and easier to mange and also improves the security of the network.
+
+	WHY SUBNETTING IS NECESSARY?
+		Subnetting helps in organizing the network in an efficient way which hwlps in expanding the technology for large firms and companies 
+		Subnetting is used for specific staffing structures to reduce traffic and maintain ordre and efficiency
+		Subnetting divides domains of the broadcast so that traffic is routed efficiently which helps in improving network performance
+		subnetting is used to increase network security 
+		
+	WHAT IS SUBNET MAKS?
+		-> A subnet maks is a 32 bit number used in IP addressing to separate the network portion of an IP from the host portion 
+		-> it helps computers and devices determine which part of an IP address refers to the netowrk they present and which part refers to their specific location or address within that network 
+	
+	ADVANTAGES OF SUBNETTING
+		-> It provides decurity to one network from another netowrk eg. In organization the code of the developer department must not ve accessed by another department
+		-> It may be possible that particular subnet might need higher network priority than others. For example , a sales department needs to host webcasts or video conferences
+		-> in the case of small networks manintenance is easy
+		
+	DISADVANTAGES OF SUBNETTING
+		-> In the case of ta single network only  three steps are required to reach process i.e source host to destination network, destination network to destination host, and then destination host to process
+		-> In the case of a single netowrk only two IP  addresses ate wasted to represent netowrkd id and broadcast address but in the case of subnetting two IP addresses are wasted for each student
+		-> The cost of the overallnetowrk also increases . Subnetting requires internal routers , switches hubs bridges etc are very costly
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

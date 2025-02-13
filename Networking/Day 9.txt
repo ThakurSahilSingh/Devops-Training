@@ -1,0 +1,223 @@
+-> How to Choose the Right Firewall for a Business Network
+	-> Selecting an appropriate firewall for a business network requires a clear understanding of the network architecture, protected assets, and specific organizational needs.
+	-> Start by defining the technical objectives of the firewall.
+	-> Determine if the network requires a comprehensive solution or if a more straightforward firewall suffices.
+	-> It's crucial to consider the type of network, importance of assets, budget, and expected traffic, for starters.
+	-> Assess how firewall products integrate into existing infrastructure. Finally, be sure to consider compliance requirements and relevant data protection laws.
+	
+-> What are the 3 types of firewalls in cyber security?
+-> There are many examples of firewall types. While the classification of firewalls can vary based on criteria and context, three commonly mentioned types are:
+	-> Packet-Filtering Firewalls:
+		-> Operate at the network level and use rules to allow or block data based on source and destination IP addresses, ports, and protocols.
+	-> Stateful Inspection Firewalls:
+		-> Also known as dynamic packet filtering firewalls, they not only examine packets but also keep track of active sessions and determine if the packet is part of an established connection.
+	-> Proxy Firewalls:
+		-> Operate at the application layer, acting as intermediaries between users and the services they wish to access, filtering traffic by ensuring that incoming data is coming from a legitimate source.
+
+
+LOAD BALANCER:
+	-> IMAGE = https://www.appviewx.com/wp-content/uploads/2021/01/what-is-a-load-balancer.png
+	
+	
+	
+	1: What is a Load balancer?
+	2: Understanding functions of Load Balancer
+	3: How do load balancers work?
+	4: Types of Load Balancers – Based on Function
+	5: Types of Load Balancers – Based on Configuration
+	6: L4, L7, and GSLB load balancers, explained
+	7: Why is load balancing necessary?
+	8: Load Balancing Methods
+		-> Industry Standard Algorithms
+		-> Other Specific Algorithm
+	9.Benefits of Load Balancers
+		-> Benefits to the website/application
+		-> Benefits to the organization
+		
+	WHAT IS A LOAD BALANCER
+	
+	-> A load balancer is a solution that acts as a traffic proxy and distributes network or application traffic across endpoints on a number of servers.
+	-> Load balancers are used to distribute capacity during peak traffic times, and to increase reliability of applications.
+	-> They improve the overall performance of applications by decreasing the burden on individual services or clouds, and distribute the demand across different compute surfaces to help maintain application and network sessions. 
+	-> Modern applications must process millions of sessions simultaneously and return the correct text, videos, images, and other data to each user in a fast and reliable manner.
+	-> To handle such high volumes of traffic, most applications have many resource servers with duplicate data among them.
+	
+	UNDERSTANDING THE FUNCTIONS OF LOAD BALANCERS 
+	
+	-> In general, a Load Balancer acts as a ‘traffic controller’ for your server and directs the requests to an available one, capable of fulfilling the request efficiently.
+	-> This ensures that requests are responded to fast and no server is over-stressed to degrade the performance.
+	-> In an organization’s attempt to meet the application demands, Load Balancer assists in deciding which server can efficiently handle the requests.
+	-> This creates a better user experience.
+	-> As the servers can also be physical or virtual, a load balancer can also be a hardware appliance or a software-based virtual one.
+	-> When a server goes down, the requests are directed to the remaining servers and when a new server gets added, the requests automatically start getting transferred to it.
+	
+	HOW DO LOAD BALANCERS WORK 
+	
+	-> https://www.appviewx.com/wp-content/uploads/2021/01/how-do-load-balancers-work.png
+	
+	-> A load balancer may be:
+
+		-> A physical device, a virtualized instance running on specialized hardware, or a software process.
+		-> Application delivery controllers, which are incorporated into ADCs, are designed to improve the performance and security of applications, no matter where they are hosted.
+		-> Able to handle many possible algorithms for balancing the load on your server farm, including round-robin, server response time, and the least connection method.
+		-> Load balancers detect the health of backend resources and only send traffic to servers that are not able to satisfy requests.
+		-> Load balancers should ultimately deliver the performance and security necessary for sustaining complex IT environments and their intricate workflows. 
+	
+	-> Types of Load Balancers – Based on Functions
+	
+	-> Several load balancing techniques are there for addressing the specific network issues:
+		-> a.) Network Load Balancer / Layer 4 (L4) Load Balancer:
+			-> Based on the network variables like IP address and destination ports, Network Load balancing is the distribution of traffic at the transport level through the routing decisions.
+			-> Such load balancing is TCP i.e. level 4, and does not consider any parameter at the application level like the type of content, cookie data, headers, locations, application behavior etc.
+			-> Performing network addressing translations without inspecting the content of discrete packets, Network Load Balancing cares only about the network layer information and directs the traffic on this basis only.
+		
+		-> b.) Application Load Balancer / Layer 7 (L7) Load Balancer:
+			-> Ranking highest in the OSI model, Layer 7 load balancer distributes the requests based on multiple parameters at the application level.
+			-> A much wider range of data is evaluated by the L7 load balancer including the HTTP headers and SSL sessions and distributes the server load based on the decision arising from a combination of several variables.
+			-> This way application load balancers control the server traffic based on the individual usage and behavior.
+			
+		-> c.) Global Server Load Balancer/Multi-site Load Balancer:
+			-> With the increasing number of applications being hosted in cloud data centers, located at varied geographies, the GSLB extends the capabilities of general L4 and L7 across various data centers facilitating the efficient global load distribution, without degrading the experience for end users.
+			-> In addition to the efficient traffic balancing, multi-site load balancers also help in quick recovery and seamless business operations, in case of server disaster or disaster at any data center, as other data centers at any part of the world can be used for business continuity.
+		
+	
+	WHAT IS APPLICATION LOAD BALANCING ?
+	
+		-> Load balancing is a common networking term that refers to distributing the workload across multiple servers and other network resources at the application layer of the OSI network model.
+		-> Typically, this involves load balancing at web application protocol level (HTTP/HTTPS, FTP, SMTP, DNS, SSH, etc.), for network health checking, server monitoring, network traffic optimization, minification, and caching.
+		
+		-> IMAGE = https://www.appviewx.com/wp-content/uploads/2021/01/Application-Load-Balancing.png
+		
+	Types of Load Balancers – Based on Configurations
+	-> Load Balancers are also classified as:
+		-> a.) Hardware Load Balancers:
+			-> As the name suggests, this is a physical, on-premise, hardware equipment to distribute the traffic on various servers.
+			-> Though they are capable of handling a huge volume of traffic but are limited in terms of flexibility, and are also fairly high in prices.
+		-> b.) Software Load Balancers:
+			-> They are the computer applications that need to be installed in the system and function similarly to the hardware load balancers.
+			-> They are of two kinds- Commercial and Open Source and are a cost-effective alternative to the hardware counterparts.
+			-> IMAGE = https://www.appviewx.com/wp-content/uploads/2021/01/software-load-balancers.png
+		-> c.) Virtual Load Balancers:
+			-> This load balancer is different from both the software and hardware load balancers as it is the combination of the program of a hardware load balancer working on a virtual machine.
+			-> Through virtualization, this kind of load balancer imitates the software driven infrastructure.
+			-> The program application of hardware equipment is executed on a virtual machine to get the traffic redirected accordingly.
+			-> But such load balancers have similar challenges as of the physical on-premise balancers viz. lack of central management, lesser scalability and much limited automation.
+		
+		-> Different types of lead balancers with different capabilities reside in the architecture called Open System interconnections model
+		-> In this model there area seven layers .Network firewalls area ta levels ont to three (physical , data link , network )
+		-> Meanwhile , load balancing happens at layers four to seven (transport, session, presentation , application)
+		-> Load balancers are generally used at Layer 4 and Layer 7
+		-> Layer 4 load balancers:
+			-> they work at the transport level. 
+			-> It means they can make routing decisions based on the TCP or UDP ports that packets use along with their source and destination IP addresses.
+			-> L4 load balancers perform network address translation (NAT), but don’t look at each packet’s contents.
+		-> Layer 7 (L7) load balancers:
+			-> they act at the application level, the highest in the OSI model.
+			-> When deciding how to distribute requests across the server farm, they can evaluate a wider range of data than L4 counterparts, including HTTP headers and SSL session IDs.
+	
+	WHY LOAD BALANCERS IS NECESSARY :
+		-> Load balances help IT departments ensure scalability and availability of services.
+		-> This advanced traffic management feature can help your business steer requests more efficiently to the right resources for each end user.
+		-> In addition, ADC offers additional functions (like encryption, authentication, and web application firewalling) than other security tools.
+		
+	WHAT IS MULTI CLOUD LOAD BALANCING ? 
+		-> A Multi-Location Load Balancer (MLB) is a web server load balancer that distributes incoming traffic across a pool of endpoints that reside in multiple environments/locations.
+		-> Multi-cloud load balancing refers to an advanced form of load balancing where the workload is spread out across multiple cloud environments.
+		-> There’s no longer a single public cloud deployment.
+		-> And it’s now critical to monitor, audit, and distribute traffic to different destinations without any manual intervention.
+		-> Cloud load balancing operates at either the Transport Layer or the Application Layer of the OSI networking model.
+		-> The multi-cloud load balancer ensures that the clients get routed to the most desirable backend servers.
+		-> Health monitors ensure that the traffic is only sent to healthy backend servers and cloud providers by taking the faulty server
+	
+	-> All kinds of Load Balancers receive the balancing requests, which are processed in accordance with a pre-configured algorithm.
+
+		1: Industry Standard Algorithms
+		-> The most common load balancing methodologies include:
+
+		a) Round Robin Algorithm:
+		-> It relies on a rotation system to sort the traffic when working with servers of equal value.
+		-> The request is transferred to the first available server and then that server is placed at the bottom of the line.
+
+		b) Weighted Round Robin Algorithm:
+		-> This algorithm is deployed to balance loads of different servers with different characteristics.
+
+		c) Least Connections Algorithm:
+		-> In this algorithm, traffic is directed to the server having the least traffic.
+		-> This helps maintain the optimized performance, especially at peak hours by maintaining a uniform load at all the servers.
+
+		d) Least Response Time Algorithm:
+		-> This algorithm, like the least connection one, directs traffic to the server with a lower number of active connections and also considers the server having the least response time as its top priority.
+
+		e) IP Hash Algorithm:
+		-> A fairly simple balancing technique assigns the client’s IP address to a fixed server for optimal performance.
+		
+		-> What are some of the common load-balancing algorithms?
+			-> Load balancing happens when the algorithm used by the load balancer determines how to distribute traffic across multiple servers, such as a server farm. Here are many ways, ranging from simple to complex.
+		
+		ROUND ROBIN:
+			-> Round-robin is a simple technique for guaranteeing that every user gets a different server.
+			-> Load balancers are simple but don’t account for the loads already on the server.
+			-> As a result, there is a danger that a server may become very busy and become overloaded.
+			-> This might slow down the server, and this may cause problems for customers or clients.
+		
+			-> image = https://www.appviewx.com/wp-content/uploads/2021/01/Round-Robin-load-balancing-algorithms.png
+			
+		LEAST RESPONSE TIME METHOD
+			-> A more sophisticated version of the slightest connection method, the least response time method relies on the time taken by a server to respond to a health monitoring request.
+			-> The response time indicates how loaded the server is and how well the users receive your site or service.
+			-> Some load balancers can also consider the number of active connections on each server.
+		LEAST CONNECTION METHOD 
+			-> Whereas round-robin doesn’t account for the current load on a server, the least connection method does make this evaluation, and as a result, it often delivers better performance.
+			-> A virtual server following the least connection method will look to send requests to the server with the least number of active connections.
+			
+			-> IMAGE = https://www.appviewx.com/wp-content/uploads/2021/01/least-connection-method-load-balancing-algorithms.png
+			
+		LEAST BANDWIDTH METHOD
+			-> A relatively simple algorithm, the least bandwidth method looks for the server currently serving the minor traffic as measured in megabits per second (Mbps).
+			-> For example, in TCP, the least-recently-used method selects the server that has been connected to the least number of times over a given time.
+
+		HASHING METHODS
+			-> Methods in this category make decisions based on various data from the incoming packet.
+			-> This includes connection or header information, such as source/destination IP address, port number, URL, or domain name.
+			
+			-> IMAGE = https://www.appviewx.com/wp-content/uploads/2021/01/hashing-methods-load-balancing-algorithms.png
+			
+		CUSTOM LOAD METHOD
+			-> The custom load method lets the load balancer query the load on individual servers via SNMP.
+			-> An administrator can define which servers need to be queried and how to combine those server loads into a metric that reflects the user experience.
+		
+		OTHER SPECIFIC ALGORITHMS
+		a) Least Bandwidth Algorithm:
+			-> In this method, the traffic is measured in Mbps, and the client request is sent to the server with the least Mbps of traffic.
+
+		b) Resource-Based (Adaptive) Algorithm:
+			-> In this method, a computer program is installed in a server that reports the current load to the balancer. That agent program then assesses the servers and resource availability to direct the traffic at the best-suited server at the moment.
+
+		c) Resource-Based (SDN Adaptive) Algorithm:
+			-> In this method, comprehensive knowledge from all layers of the application and inputs from an SDN Controller is analyzed to make better decisions regarding traffic distribution.
+
+		d) Source IP Hash:
+			-> In this method, the client’s and server’s IP addresses are mixed to generate a unique hash key, which then allocates the traffic to a particular server.
+
+		e) URL Hash:
+			-> This algorithm distributes writes uniformly across multiple sites direct all reads to the website owning a particular object.
+		
+		Benefits to the website/application:
+		1. Enhanced Performance:
+		Load Balancers reduce the additional load on a particular server and ensures seamless operations and response, giving the clients a better experience.
+
+		2. Resilience:
+		The failed and under-performing components can be substituted immediately and giving information about which equipment needs service, with nil or negligible downtime.
+
+		3. Security:
+		Without any change in any form, Load Balancer gives an additional layer of security to your website and applications.
+		
+		Benefits to the organizations
+		1. Scalability:
+		Without disrupting the services, Load Balancers make it easy to change the server infrastructure anytime.
+
+		2. Predictive Analysis:
+		Software load balancers can predict traffic bottlenecks before they happen in reality.
+
+		3. Big Data:
+		Actionable insights out of the big data generated by global users can be analyzed to drive better and informed business decisions.
